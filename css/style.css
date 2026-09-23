@@ -47,9 +47,6 @@ a {
   text-decoration: none;
 }
 
-
-/* ================= NAVBAR ================= */
-
 .navbar {
   position: fixed;
   top: 0;
@@ -131,9 +128,6 @@ a {
   color: var(--blue);
   margin-left: 7px;
 }
-
-
-/* ================= HERO ================= */
 
 .hero {
   min-height: 100vh;
@@ -322,9 +316,6 @@ a {
   box-shadow: 0 0 10px #28e99a;
 }
 
-
-/* ================= HERO ART ================= */
-
 .hero-visual {
   height: 610px;
 
@@ -473,9 +464,6 @@ a {
   left: 3%;
 }
 
-
-/* ================= SECTIONS ================= */
-
 .section {
   max-width: 1450px;
 
@@ -503,9 +491,6 @@ a {
 
   letter-spacing: -.075em;
 }
-
-
-/* ================= WHY ================= */
 
 .why-heading {
   display: grid;
@@ -609,9 +594,6 @@ a {
 
   max-width: 850px;
 }
-
-
-/* ================= FEATURES ================= */
 
 .section-title-row {
   display: flex;
@@ -739,9 +721,6 @@ a {
   color: #657088;
 }
 
-
-/* ================= EXPERIENCE ================= */
-
 .experience-section > h2 {
   max-width: 900px;
 
@@ -804,9 +783,6 @@ a {
 
   opacity: .55;
 }
-
-
-/* ================= COMING SOON ================= */
 
 .coming-section {
   padding: 130px 8vw;
@@ -888,9 +864,6 @@ a {
   box-shadow: 0 0 10px #28e99a;
 }
 
-
-/* ================= TEAM ================= */
-
 .team-section h2 {
   margin-bottom: 60px;
 }
@@ -954,9 +927,6 @@ a {
   font-size: .82rem;
 }
 
-
-/* ================= CONTACT ================= */
-
 .contact-section {
   text-align: center;
 
@@ -998,9 +968,6 @@ a {
   margin-left: 12px;
 }
 
-
-/* ================= FOOTER ================= */
-
 footer {
   display: flex;
 
@@ -1017,9 +984,6 @@ footer {
   font-size: .72rem;
 }
 
-
-/* ================= ANIMATION ================= */
-
 @keyframes rotate {
   from {
     transform: rotate(0deg);
@@ -1029,9 +993,6 @@ footer {
     transform: rotate(360deg);
   }
 }
-
-
-/* ================= RESPONSIVE ================= */
 
 @media (max-width: 1050px) {
 
@@ -1075,7 +1036,6 @@ footer {
     gap: 25px;
   }
 }
-
 
 @media (max-width: 650px) {
 
@@ -1157,11 +1117,6 @@ footer {
   }
 }
 
-
-/* ===============================
-   JAVASCRIPT INTERACTIONS
-================================ */
-
 .navbar.scrolled {
   background: rgba(5, 6, 10, .82);
 
@@ -1171,9 +1126,6 @@ footer {
   box-shadow:
     0 15px 50px rgba(0,0,0,.18);
 }
-
-
-/* Scroll reveal */
 
 .reveal {
   opacity: 0;
@@ -1192,9 +1144,6 @@ footer {
   transform:
     translateY(0);
 }
-
-
-/* Hero entrance */
 
 .hero-content,
 .hero-visual {
@@ -1223,9 +1172,6 @@ footer {
     scale(1);
 }
 
-
-/* Mouse glow */
-
 .mouse-glow {
   position: fixed;
 
@@ -1253,15 +1199,9 @@ footer {
   will-change: transform;
 }
 
-
-/* Feature card smooth transition */
-
 .feature-card {
   will-change: transform;
 }
-
-
-/* Reduced motion */
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -1291,11 +1231,6 @@ footer {
 
 }
 
-
-/* =================================
-   X-PAY PRODUCT UI
-================================= */
-
 .hero-visual {
   perspective: 1200px;
 }
@@ -1318,9 +1253,6 @@ footer {
 
   filter: blur(10px);
 }
-
-
-/* Main payment interface */
 
 .payment-ui {
   position: relative;
@@ -1356,9 +1288,6 @@ footer {
   animation:
     productFloat 6s ease-in-out infinite;
 }
-
-
-/* Top */
 
 .payment-top {
   display: flex;
@@ -1425,9 +1354,6 @@ footer {
     0 0 10px #2be9a0;
 }
 
-
-/* Balance */
-
 .balance-label {
   color: #6e778d;
 
@@ -1451,9 +1377,6 @@ footer {
 
   font-size: 1.3rem;
 }
-
-
-/* Actions */
 
 .payment-actions {
   display: grid;
@@ -1504,9 +1427,6 @@ footer {
   font-size: .58rem;
 }
 
-
-/* Divider */
-
 .payment-divider {
   height: 1px;
 
@@ -1515,9 +1435,6 @@ footer {
   background:
     rgba(255,255,255,.07);
 }
-
-
-/* Activity */
 
 .recent-header {
   display: flex;
@@ -1536,9 +1453,6 @@ footer {
 .recent-header span:last-child {
   color: var(--blue);
 }
-
-
-/* Transactions */
 
 .transaction {
   display: flex;
@@ -1616,9 +1530,6 @@ footer {
 .transaction > b.received {
   color: #38d9a4;
 }
-
-
-/* Network floating card */
 
 .network-card {
   position: absolute;
@@ -1707,9 +1618,6 @@ footer {
     0 0 12px #2ceca1;
 }
 
-
-/* Voice card */
-
 .voice-card {
   position: absolute;
 
@@ -1794,9 +1702,6 @@ footer {
   font-size: .61rem;
 }
 
-
-/* Animations */
-
 @keyframes productFloat {
 
   0%,100% {
@@ -1838,9 +1743,6 @@ footer {
   }
 
 }
-
-
-/* Mobile */
 
 @media (max-width: 1050px) {
 
@@ -1884,11 +1786,6 @@ footer {
 
 }
 
-
-/* =================================
-   X-PAY FEATURE EXPERIENCE
-================================= */
-
 .xpay-features {
   align-items: stretch;
 }
@@ -1927,9 +1824,6 @@ footer {
   letter-spacing: .13em;
 }
 
-
-/* Feature visual */
-
 .feature-visual {
   height: 150px;
 
@@ -1952,9 +1846,6 @@ footer {
       transparent 68%
     );
 }
-
-
-/* Offline */
 
 .offline-core {
   width: 72px;
@@ -2027,9 +1918,6 @@ footer {
   animation-delay: 1s;
 }
 
-
-/* Phone */
-
 .phone-circle {
   width: 155px;
   height: 74px;
@@ -2098,9 +1986,6 @@ footer {
     0 0 25px
     rgba(32,217,155,.35);
 }
-
-
-/* Voice */
 
 .voice-bars {
   height: 65px;
@@ -2184,9 +2069,6 @@ footer {
   font-size: .56rem;
 }
 
-
-/* SMS / USSD */
-
 .fallback-visual {
   gap: 7px;
 
@@ -2232,9 +2114,6 @@ footer {
   color: var(--blue);
 }
 
-
-/* Feature text */
-
 .xpay-features .feature-card h3 {
   margin:
     0 0 11px;
@@ -2270,9 +2149,6 @@ footer {
   font-size: .8rem;
 }
 
-
-/* Animations */
-
 @keyframes pulseRing {
 
   0% {
@@ -2301,9 +2177,6 @@ footer {
 
 }
 
-
-/* Mobile */
-
 @media (max-width: 650px) {
 
   .xpay-features .feature-card {
@@ -2312,11 +2185,6 @@ footer {
 
 }
 
-
-/* =================================
-   PREMIUM X-PAY NAVIGATION
-================================= */
-
 .nav-right {
   display: flex;
 
@@ -2324,9 +2192,6 @@ footer {
 
   gap: 14px;
 }
-
-
-/* Custom X logo */
 
 .logo {
   gap: 9px;
@@ -2411,9 +2276,6 @@ footer {
   color: #8992a5;
 }
 
-
-/* Menu button */
-
 .menu-toggle {
   width: 42px;
   height: 42px;
@@ -2449,9 +2311,6 @@ footer {
     transform .3s ease,
     opacity .3s ease;
 }
-
-
-/* Mobile menu */
 
 .mobile-menu {
   position: fixed;
@@ -2557,9 +2416,6 @@ footer {
   font-size: .6rem;
 }
 
-
-/* Open state */
-
 .menu-toggle.active span:first-child {
   transform:
     translateY(3.5px)
@@ -2572,9 +2428,6 @@ footer {
     rotate(-45deg);
 }
 
-
-/* Desktop */
-
 @media (min-width: 1051px) {
 
   .mobile-menu {
@@ -2582,9 +2435,6 @@ footer {
   }
 
 }
-
-
-/* Mobile */
 
 @media (max-width: 1050px) {
 
@@ -2614,7 +2464,6 @@ footer {
 
 }
 
-
 @media (max-width: 650px) {
 
   .mobile-menu-inner {
@@ -2629,11 +2478,6 @@ footer {
   }
 
 }
-
-
-/* =================================
-   HOW X-PAY WORKS
-================================= */
 
 .flow-section {
   position: relative;
@@ -2693,9 +2537,6 @@ footer {
 
   max-width: 500px;
 }
-
-
-/* Payment flow */
 
 .payment-flow {
   display: grid;
@@ -2812,9 +2653,6 @@ footer {
   line-height: 1.65;
 }
 
-
-/* Connector */
-
 .flow-connector {
   position: relative;
 
@@ -2844,9 +2682,6 @@ footer {
 
   font-size: 1.2rem;
 }
-
-
-/* Connectivity signal */
 
 .signal-loss {
   position: absolute;
@@ -2891,9 +2726,6 @@ footer {
   animation:
     signalPulse 1.2s ease-in-out infinite;
 }
-
-
-/* Fallback strip */
 
 .fallback-strip {
   display: grid;
@@ -2962,9 +2794,6 @@ footer {
   letter-spacing: .1em;
 }
 
-
-/* Animation */
-
 @keyframes signalPulse {
 
   0%,100% {
@@ -2976,9 +2805,6 @@ footer {
   }
 
 }
-
-
-/* Responsive */
 
 @media (max-width: 1050px) {
 
@@ -3019,7 +2845,6 @@ footer {
 
 }
 
-
 @media (max-width: 650px) {
 
   .flow-heading h2 {
@@ -3038,10 +2863,6 @@ footer {
   }
 
 }
-
-/* =================================
-   TEAM / FOUNDERS
-================================= */
 
 .team-heading {
   display: grid;
@@ -3189,12 +3010,6 @@ footer {
   }
 
 }
-
-
-
-/* =================================
-   CONTACT
-================================= */
 
 .contact-section {
   position: relative;
@@ -3439,11 +3254,6 @@ footer {
 
 }
 
-
-/* =================================
-   FOOTER
-================================= */
-
 .site-footer {
   padding:
     45px 5vw 28px;
@@ -3549,11 +3359,6 @@ footer {
   }
 
 }
-
-
-/* =================================
-   XORO AI ASSISTANT
-================================= */
 
 .xoro-visual {
   background:
@@ -3703,12 +3508,6 @@ footer {
   }
 
 }
-
-
-
-/* =================================
-   WHY X-PAY / DIFFERENCE
-================================= */
 
 .xpay-difference {
   position: relative;
@@ -3879,9 +3678,6 @@ footer {
   line-height: 1.7;
 }
 
-
-/* Connectivity */
-
 .difference-flow {
   position: absolute;
 
@@ -3918,9 +3714,6 @@ footer {
   font-style: normal;
 }
 
-
-/* AI prompt */
-
 .ai-prompt {
   position: absolute;
 
@@ -3956,9 +3749,6 @@ footer {
   font-size: .85rem;
 }
 
-
-/* Security */
-
 .security-tags {
   position: absolute;
 
@@ -3988,9 +3778,6 @@ footer {
 
   letter-spacing: .08em;
 }
-
-
-/* Fraud */
 
 .risk-meter {
   position: absolute;
@@ -4050,7 +3837,6 @@ footer {
     );
 }
 
-
 @media (max-width: 1050px) {
 
   .difference-heading {
@@ -4068,12 +3854,6 @@ footer {
   }
 
 }
-
-
-
-/* =================================
-   SECURITY ENGINE
-================================= */
 
 .security-section {
   position: relative;
@@ -4149,9 +3929,6 @@ footer {
   line-height: 1.75;
 }
 
-
-/* Main layout */
-
 .security-layout {
   display: grid;
 
@@ -4160,9 +3937,6 @@ footer {
 
   gap: 15px;
 }
-
-
-/* Monitor */
 
 .security-panel {
   min-height: 590px;
@@ -4229,9 +4003,6 @@ footer {
     rgba(52,217,161,.8);
 }
 
-
-/* Transaction visualization */
-
 .transaction-visual {
   position: absolute;
 
@@ -4293,9 +4064,6 @@ footer {
   transform:
     rotate(5deg);
 }
-
-
-/* Nodes */
 
 .transaction-node {
   position: absolute;
@@ -4373,9 +4141,6 @@ footer {
     rgba(52,143,255,.3);
 }
 
-
-/* Bottom transaction */
-
 .security-panel-bottom {
   position: absolute;
 
@@ -4399,9 +4164,6 @@ footer {
 
   font-weight: 500;
 }
-
-
-/* Controls */
 
 .security-controls {
   display: flex;
@@ -4506,7 +4268,6 @@ footer {
     rgba(255,119,77,.15);
 }
 
-
 @media (max-width: 1050px) {
 
   .security-heading {
@@ -4524,7 +4285,6 @@ footer {
   }
 
 }
-
 
 @media (max-width: 650px) {
 
@@ -4547,12 +4307,6 @@ footer {
   }
 
 }
-
-
-
-/* =================================
-   X-PAY BRAND LOGO
-================================= */
 
 .xpay-logo-img {
   width: 30px;
@@ -4633,12 +4387,6 @@ footer {
 
 }
 
-
-
-/* =================================
-   X-PAY TAGLINE
-================================= */
-
 .logo-text {
   display: flex;
 
@@ -4689,12 +4437,6 @@ footer {
 
 }
 
-
-
-/* =================================
-   X-PAY — ONE BRAND LOGO SYSTEM
-================================= */
-
 .xpay-logo-img,
 .hero-brand img,
 .footer-logo img {
@@ -4715,9 +4457,6 @@ footer {
   box-shadow:
     0 0 25px rgba(58, 91, 255, .18);
 }
-
-
-/* Navbar */
 
 header .logo {
   display: inline-flex !important;
@@ -4740,9 +4479,6 @@ header .logo .logo-text {
 header .logo .logo-text > span {
   color: #77839a;
 }
-
-
-/* Hero */
 
 .hero-brand {
   display: inline-flex !important;
@@ -4780,9 +4516,6 @@ header .logo .logo-text > span {
   letter-spacing: .18em;
 }
 
-
-/* Footer */
-
 .site-footer .footer-logo {
   display: inline-flex !important;
 
@@ -4799,19 +4532,10 @@ header .logo .logo-text > span {
   line-height: .95;
 }
 
-
-/* Prevent old logo pieces */
-
 .logo-x,
 .logo-mark {
   display: none !important;
 }
-
-
-
-/* =================================
-   COMING SOON BADGE
-================================= */
 
 .coming-soon-badge {
   display: inline-flex;
@@ -4870,12 +4594,6 @@ header .logo .logo-text > span {
 
 }
 
-
-
-/* =================================
-   HERO FINAL LAYOUT FIX
-================================= */
-
 .hero {
   position: relative;
 }
@@ -4907,9 +4625,6 @@ header .logo .logo-text > span {
   margin: 0 0 24px 0 !important;
 }
 
-
-/* Keep the hero branding compact */
-
 .hero-brand img {
   width: 34px !important;
   height: 34px !important;
@@ -4917,15 +4632,9 @@ header .logo .logo-text > span {
   flex: 0 0 34px;
 }
 
-
-/* Prevent accidental grid stretching */
-
 .hero-content > * {
   justify-self: start;
 }
-
-
-/* Navbar logo */
 
 header .logo {
   width: fit-content !important;
@@ -4938,20 +4647,10 @@ header .logo img {
   display: block !important;
 }
 
-
-/* Remove old artificial logo styling */
-
 header .logo-x,
 header .logo-mark {
   display: none !important;
 }
-
-
-
-/* =================================
-   SIMPLE X-PAY BRANDING
-   Temporary — final logo later
-================================= */
 
 .simple-xpay-logo {
   display: inline-flex !important;
@@ -4985,9 +4684,6 @@ header .logo-mark {
   letter-spacing: -.05em;
 }
 
-
-/* Keep hero logo simple too */
-
 .hero-brand {
   border: 0 !important;
   background: transparent !important;
@@ -5006,18 +4702,9 @@ header .logo-mark {
   letter-spacing: .18em;
 }
 
-
-/* Footer simple branding */
-
 .footer-logo img {
   display: none !important;
 }
-
-
-
-/* =========================================
-   X-PAY — FINAL PREMIUM HERO COMPOSITION
-========================================= */
 
 .hero {
   position: relative;
@@ -5047,15 +4734,9 @@ header .logo-mark {
   color: #8994aa !important;
 }
 
-
-/* Coming soon */
-
 .coming-soon-badge {
   margin-bottom: 24px !important;
 }
-
-
-/* Main headline */
 
 .hero h1 {
   max-width: 720px;
@@ -5063,31 +4744,17 @@ header .logo-mark {
   margin-bottom: 22px !important;
 }
 
-
-/* Description */
-
 .hero-description {
   max-width: 590px;
 }
-
-
-/* Buttons */
 
 .hero-buttons {
   margin-top: 8px;
 }
 
-
-/* Information row */
-
 .hero-info {
   margin-top: 22px;
 }
-
-
-/* -----------------------------------------
-   RIGHT PAYMENT VISUAL
------------------------------------------ */
 
 .hero-visual {
   position: absolute !important;
@@ -5104,18 +4771,12 @@ header .logo-mark {
   z-index: 3;
 }
 
-
-/* Payment dashboard */
-
 .hero-visual .payment-card,
 .hero-visual .dashboard-card {
   position: relative;
 
   width: 100%;
 }
-
-
-/* Offline network indicator */
 
 .hero-visual::before {
   content: "↯   OFFLINE READY";
@@ -5150,9 +4811,6 @@ header .logo-mark {
     0 18px 50px rgba(0,0,0,.25);
 }
 
-
-/* Green status light */
-
 .hero-visual::after {
   content: "";
 
@@ -5172,11 +4830,6 @@ header .logo-mark {
     0 0 14px rgba(37,231,173,.9);
 }
 
-
-/* -----------------------------------------
-   FEATURE GRID
------------------------------------------ */
-
 .features-grid {
   align-items: stretch;
 }
@@ -5189,9 +4842,6 @@ header .logo-mark {
   min-height: 385px;
 }
 
-
-/* Xoro visual */
-
 .xoro-card .xoro-visual {
   min-height: 150px;
 
@@ -5203,9 +4853,6 @@ header .logo-mark {
 
   position: relative;
 }
-
-
-/* Xoro center */
 
 .xoro-core {
   width: 72px;
@@ -5237,11 +4884,6 @@ header .logo-mark {
 
   color: #6e8cff;
 }
-
-
-/* -----------------------------------------
-   MOBILE
------------------------------------------ */
 
 @media (max-width: 900px) {
 
@@ -5275,19 +4917,10 @@ header .logo-mark {
 
 }
 
-
-
-/* =========================================
-   HERO VISUAL — KEEP EVERYTHING IN FRAME
-========================================= */
-
 .hero-visual {
   right: 5% !important;
   width: min(430px, 38vw) !important;
 }
-
-
-/* Voice command floating card */
 
 .hero-visual .voice-command,
 .hero-visual .voice-card,
@@ -5295,24 +4928,14 @@ header .logo-mark {
   max-width: 180px;
 }
 
-
-/* Keep floating elements inside viewport */
-
 .hero-visual > * {
   max-width: 100%;
 }
-
-
-/* If the voice command is positioned absolutely,
-   move it inward from the right edge */
 
 .hero-visual .voice-command,
 .hero-visual .voice-card {
   right: 8% !important;
 }
-
-
-/* Desktop spacing */
 
 @media (min-width: 1200px) {
 
@@ -5323,9 +4946,6 @@ header .logo-mark {
 
 }
 
-
-/* Smaller desktop */
-
 @media (min-width: 901px) and (max-width: 1199px) {
 
   .hero-visual {
@@ -5334,12 +4954,6 @@ header .logo-mark {
   }
 
 }
-
-
-
-/* =========================================
-   VOICE COMMAND — MOVE BELOW DASHBOARD
-========================================= */
 
 .hero-visual .voice-command,
 .hero-visual .voice-card {
@@ -5352,15 +4966,9 @@ header .logo-mark {
   transform: none !important;
 }
 
-
-/* Keep it fully visible */
-
 .hero-visual .voice-command {
   z-index: 10;
 }
-
-
-/* Desktop spacing */
 
 @media (min-width: 901px) {
 
@@ -5370,13 +4978,6 @@ header .logo-mark {
 
 }
 
-
-
-/* =========================================
-   RESTORE OFFLINE / FALLBACK POSITION
-========================================= */
-
-/* Offline fallback indicator */
 .hero-visual .network-status,
 .hero-visual .payment-network,
 .hero-visual [class*="network"],
@@ -5390,8 +4991,6 @@ header .logo-mark {
   z-index: 8;
 }
 
-
-/* Voice command stays below dashboard */
 .hero-visual .voice-command,
 .hero-visual .voice-card {
   top: auto !important;
@@ -5404,18 +5003,10 @@ header .logo-mark {
   z-index: 10;
 }
 
-
-/* Voice command — move slightly upward */
 .hero-visual .voice-command,
 .hero-visual .voice-card {
   bottom: -20px !important;
 }
-
-
-
-/* =========================================
-   X-PAY PREMIUM HERO FEATURE PILLS
-========================================= */
 
 .hero-pills {
   display: flex;
@@ -5428,7 +5019,6 @@ header .logo-mark {
   position: relative;
   z-index: 6;
 }
-
 
 .hero-pill {
   display: flex;
@@ -5462,7 +5052,6 @@ header .logo-mark {
     background .25s ease;
 }
 
-
 .hero-pill:hover {
   transform: translateY(-3px);
 
@@ -5475,7 +5064,6 @@ header .logo-mark {
       rgba(255,255,255,.025)
     );
 }
-
 
 .pill-icon {
   width: 29px;
@@ -5495,7 +5083,6 @@ header .logo-mark {
   background: rgba(255,255,255,.035);
 }
 
-
 .offline-icon {
   color: #19dfff;
 
@@ -5504,7 +5091,6 @@ header .logo-mark {
   box-shadow:
     0 0 18px rgba(25,223,255,.08);
 }
-
 
 .xoro-icon {
   color: #9c70ff;
@@ -5515,7 +5101,6 @@ header .logo-mark {
     0 0 18px rgba(156,112,255,.08);
 }
 
-
 .security-icon {
   color: #26e8a8;
 
@@ -5524,7 +5109,6 @@ header .logo-mark {
   box-shadow:
     0 0 18px rgba(38,232,168,.08);
 }
-
 
 .hero-pill strong {
   display: block;
@@ -5539,7 +5123,6 @@ header .logo-mark {
   letter-spacing: .01em;
 }
 
-
 .hero-pill small {
   display: block;
 
@@ -5553,11 +5136,6 @@ header .logo-mark {
   letter-spacing: .06em;
 }
 
-
-/* =========================================
-   COMING SOON CTA
-========================================= */
-
 .hero-buttons a:first-child {
   display: inline-flex;
   align-items: center;
@@ -5570,33 +5148,24 @@ header .logo-mark {
   border-radius: 999px;
 }
 
-
 .hero-buttons a:first-child span {
   font-size: 15px;
   transition: transform .2s ease;
 }
 
-
 .hero-buttons a:first-child:hover span {
   transform: translateX(3px);
 }
 
-
-/* =========================================
-   HERO POLISH
-========================================= */
-
 .hero-content {
   max-width: 720px;
 }
-
 
 .hero-description {
   max-width: 600px;
 
   line-height: 1.75;
 }
-
 
 @media (max-width: 700px) {
 
@@ -5611,16 +5180,10 @@ header .logo-mark {
 
 }
 
-
-/* =========================================
-   HERO — FALLBACK STATUS POSITION
-========================================= */
-
 .hero-visual {
   position: relative;
 }
 
-/* Ready for fallback floating card */
 .hero-visual .network-status,
 .hero-visual .fallback-status,
 .hero-visual .payment-network,
@@ -5629,7 +5192,6 @@ header .logo-mark {
   z-index: 8;
 }
 
-/* Keep floating status away from the center */
 .hero-visual .network-status {
   position: absolute;
   top: 2%;
@@ -5637,14 +5199,12 @@ header .logo-mark {
   transform: translateY(-8px);
 }
 
-/* If the status card uses the payment-network class */
 .hero-visual .payment-network {
   position: absolute;
   top: 0;
   right: 18%;
 }
 
-/* Desktop spacing */
 @media (min-width: 1000px) {
   .hero-visual .network-status,
   .hero-visual .payment-network {
@@ -5652,7 +5212,6 @@ header .logo-mark {
   }
 }
 
-/* Mobile */
 @media (max-width: 900px) {
   .hero-visual .network-status,
   .hero-visual .payment-network {
@@ -5664,21 +5223,13 @@ header .logo-mark {
   }
 }
 
-
-/* =========================================
-   X-PAY — READY FOR FALLBACK
-   FINAL HERO POSITION
-========================================= */
-
 .hero-visual {
   position: relative;
 }
 
-/* Exact fallback card */
 .hero-visual .network-card {
   position: absolute !important;
 
-  /* payment card ke upper-left area */
   top: 5% !important;
   right: 31% !important;
 
@@ -5690,13 +5241,11 @@ header .logo-mark {
   transform: translateY(-6px) !important;
 }
 
-/* Keep the fallback card compact */
 .hero-visual .network-card {
   width: max-content;
   min-width: 190px;
 }
 
-/* Subtle premium floating effect */
 .hero-visual .network-card {
   animation: fallbackFloat 4s ease-in-out infinite;
 }
@@ -5711,20 +5260,14 @@ header .logo-mark {
   }
 }
 
-
-/* Make sure the payment UI stays behind it */
 .hero-visual .payment-card {
   z-index: 10;
 }
 
-
-/* Voice command stays lower-right */
 .hero-visual .voice-card {
   z-index: 18;
 }
 
-
-/* Responsive */
 @media (max-width: 1000px) {
 
   .hero-visual .network-card {
@@ -5733,7 +5276,6 @@ header .logo-mark {
   }
 
 }
-
 
 @media (max-width: 700px) {
 
@@ -5749,8 +5291,6 @@ header .logo-mark {
 
 }
 
-
-/* Move OFFLINE / FALLBACK status further right */
 .hero-visual .network-card {
   right: 20% !important;
   top: 3% !important;
@@ -5762,17 +5302,11 @@ header .logo-mark {
   }
 }
 
-
-/* =========================================
-   X-PAY HERO — FINAL PREMIUM POSITION FIX
-========================================= */
-
 .hero-visual {
   position: relative !important;
   overflow: visible !important;
 }
 
-/* Main payment network card */
 .hero-visual .network-card {
   position: absolute !important;
   top: 2% !important;
@@ -5782,14 +5316,12 @@ header .logo-mark {
   z-index: 20 !important;
 }
 
-/* Offline-ready indicator — keep it left of the network card */
 .hero-visual .offline-card,
 .hero-visual .offline-ready,
 .hero-visual [class*="offline"] {
   z-index: 15 !important;
 }
 
-/* Voice command stays below the payment card */
 .hero-visual .voice-card {
   position: absolute !important;
   right: 2% !important;
@@ -5799,13 +5331,11 @@ header .logo-mark {
   z-index: 18 !important;
 }
 
-/* Extra spacing so floating elements never sit in the headline */
 .hero-content {
   position: relative;
   z-index: 5;
 }
 
-/* Desktop hero visual balance */
 @media (min-width: 1000px) {
   .hero-visual .network-card {
     top: 1% !important;
@@ -5818,7 +5348,6 @@ header .logo-mark {
   }
 }
 
-/* Mobile */
 @media (max-width: 900px) {
   .hero-visual .network-card,
   .hero-visual .voice-card {
@@ -5832,14 +5361,11 @@ header .logo-mark {
   }
 }
 
-
-/* Move fallback card slightly left */
 @media (min-width: 1000px) {
   .hero-visual .network-card {
     right: 12% !important;
   }
 }
-
 
 @media (min-width: 1000px) {
   .hero-visual .network-card {
@@ -5847,22 +5373,12 @@ header .logo-mark {
   }
 }
 
-
-/* =========================================
-   FALLBACK CARD — FINAL POSITION
-========================================= */
-
 @media (min-width: 1000px) {
   .hero-visual .network-card {
     right: 27% !important;
     top: -2% !important;
   }
 }
-
-
-/* =========================================
-   X-PAY — RESPONSIVE / SPLIT SCREEN FIX
-========================================= */
 
 @media (max-width: 1100px) {
 
@@ -5960,7 +5476,6 @@ header .logo-mark {
 
 }
 
-/* Very narrow split-screen windows */
 @media (max-width: 480px) {
 
   .hero {
@@ -5991,7 +5506,6 @@ header .logo-mark {
 
 }
 
-/* Prevent accidental horizontal overflow */
 html,
 body {
   max-width: 100%;
@@ -6002,4 +5516,3 @@ img,
 svg {
   max-width: 100%;
 }
-
