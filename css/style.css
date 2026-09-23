@@ -4918,7 +4918,7 @@ header .logo-mark {
 }
 
 .hero-visual {
-  right: 5% !important;
+  right: 0 !important;
   width: min(430px, 38vw) !important;
 }
 
@@ -5283,7 +5283,7 @@ header .logo-mark {
     position: absolute !important;
 
     top: 0 !important;
-    right: 5% !important;
+    right: 0 !important;
 
     transform: scale(.85) !important;
     transform-origin: top right;
@@ -5298,7 +5298,7 @@ header .logo-mark {
 
 @media (max-width: 1000px) {
   .hero-visual .network-card {
-    right: 5% !important;
+    right: 0 !important;
   }
 }
 
