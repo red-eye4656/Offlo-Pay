@@ -4308,7 +4308,7 @@ footer {
 
 }
 
-.xpay-logo-img {
+.offlopay-logo-img {
   width: 30px;
   height: 30px;
 
@@ -4376,7 +4376,7 @@ footer {
 
 @media (max-width: 650px) {
 
-  .xpay-logo-img {
+  .offlopay-logo-img {
     width: 27px;
     height: 27px;
   }
@@ -4437,7 +4437,7 @@ footer {
 
 }
 
-.xpay-logo-img,
+.offlopay-logo-img,
 .hero-brand img,
 .footer-logo img {
   width: 34px !important;
@@ -4652,7 +4652,7 @@ header .logo-mark {
   display: none !important;
 }
 
-.simple-xpay-logo {
+.simple-offlopay-logo {
   display: inline-flex !important;
   align-items: center;
   gap: 1px;
