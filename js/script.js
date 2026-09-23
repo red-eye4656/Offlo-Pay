@@ -1,12 +1,4 @@
-/* ===============================
-   X-PAY PREMIUM INTERACTIONS
-================================ */
-
 document.addEventListener("DOMContentLoaded", () => {
-
-  /* -------------------------------
-     NAVBAR SCROLL EFFECT
-  -------------------------------- */
 
   const navbar = document.querySelector(".navbar");
 
@@ -21,10 +13,7 @@ document.addEventListener("DOMContentLoaded", () => {
   window.addEventListener("scroll", updateNavbar);
   updateNavbar();
 
-
-  /* -------------------------------
-     SCROLL REVEAL
-  -------------------------------- */
+  
 
   const revealElements = document.querySelectorAll(
     ".section, .feature-card, .difference-box, .experience-card, .team-card, .coming-box"
@@ -56,10 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
     observer.observe(element);
   });
 
-
-  /* -------------------------------
-     HERO ENTRANCE
-  -------------------------------- */
+  
 
   const heroContent = document.querySelector(".hero-content");
   const heroVisual = document.querySelector(".hero-visual");
@@ -69,10 +55,7 @@ document.addEventListener("DOMContentLoaded", () => {
     heroVisual?.classList.add("hero-visible");
   }, 150);
 
-
-  /* -------------------------------
-     MOUSE GLOW
-  -------------------------------- */
+  
 
   const glow = document.createElement("div");
 
@@ -107,10 +90,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   animateGlow();
 
-
-  /* -------------------------------
-     FEATURE CARD TILT
-  -------------------------------- */
+  
 
   const cards = document.querySelectorAll(".feature-card");
 
@@ -140,7 +120,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 
-
     card.addEventListener("mouseleave", () => {
 
       card.style.transform =
@@ -150,10 +129,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
   });
 
-
-  /* -------------------------------
-     SMOOTH ANCHOR NAVIGATION
-  -------------------------------- */
+  
 
   document.querySelectorAll('a[href^="#"]').forEach((link) => {
 
@@ -180,11 +156,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 });
 
-
-/* =================================
-   MOBILE MENU
-================================= */
-
 const menuToggle =
   document.querySelector(".menu-toggle");
 
@@ -193,7 +164,6 @@ const mobileMenu =
 
 const mobileLinks =
   document.querySelectorAll(".mobile-menu a");
-
 
 const closeMobileMenu = () => {
 
@@ -209,7 +179,6 @@ const closeMobileMenu = () => {
   );
 
 };
-
 
 menuToggle?.addEventListener("click", () => {
 
@@ -233,7 +202,6 @@ menuToggle?.addEventListener("click", () => {
 
 });
 
-
 mobileLinks.forEach((link) => {
 
   link.addEventListener(
@@ -242,7 +210,6 @@ mobileLinks.forEach((link) => {
   );
 
 });
-
 
 window.addEventListener("resize", () => {
 
