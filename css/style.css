@@ -5544,3 +5544,12 @@ svg {
   }
 }
 
+
+@media (min-width: 901px) {
+  .hero-visual .fallback-status {
+    left: -95px !important;
+    right: auto !important;
+    top: 65px !important;
+  }
+}
+
