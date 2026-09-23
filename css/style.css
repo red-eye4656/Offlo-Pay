@@ -5523,3 +5523,10 @@ svg {
   }
 }
 
+
+@media (min-width: 901px) {
+  .hero-visual {
+    margin-right: 30px;
+  }
+}
+
