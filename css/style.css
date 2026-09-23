@@ -5640,3 +5640,48 @@ svg {
   }
 }
 
+
+/* Responsive hero badges */
+@media (max-width: 900px) {
+  .hero-visual::before {
+    left: 50% !important;
+    top: -62px !important;
+    transform: translateX(-50%) !important;
+    white-space: nowrap !important;
+    z-index: 30 !important;
+  }
+
+  .hero-visual::after {
+    left: calc(50% - 82px) !important;
+    top: -52px !important;
+    z-index: 31 !important;
+  }
+
+  .hero-visual .network-card {
+    top: -62px !important;
+    right: 5px !important;
+    left: auto !important;
+    transform: scale(.82) !important;
+    transform-origin: right bottom !important;
+    z-index: 30 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-visual::before {
+    top: -52px !important;
+    transform: translateX(-50%) scale(.78) !important;
+  }
+
+  .hero-visual::after {
+    top: -44px !important;
+    left: calc(50% - 64px) !important;
+  }
+
+  .hero-visual .network-card {
+    top: -52px !important;
+    right: 0 !important;
+    transform: scale(.68) !important;
+  }
+}
+
