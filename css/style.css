@@ -7206,3 +7206,266 @@ header .offlopay-logo-name {
   }
 }
 
+
+/* =========================================================
+   OFFLO-PAY — MOBILE POLISH / NO OVERLAP
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  /* Remove browser tap highlight on mobile */
+  * {
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  body {
+    touch-action: manipulation;
+  }
+
+  /* Navbar */
+  .navbar {
+    padding: 18px 20px !important;
+    min-height: 72px !important;
+  }
+
+  .offlopay-navbar-logo,
+  .offlopay-logo-name {
+    font-size: 20px !important;
+  }
+
+  /* HERO */
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    padding: 70px 16px 80px !important;
+    min-height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* PAYMENT VISUAL */
+  .hero-visual {
+    order: 1 !important;
+
+    width: 100% !important;
+    max-width: 390px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 0 auto 42px !important;
+
+    position: relative !important;
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+
+    display: block !important;
+    overflow: visible !important;
+  }
+
+  /* MAIN PAYMENT CARD */
+  .hero-visual .payment-ui {
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 72px auto 0 !important;
+
+    transform: none !important;
+
+    z-index: 10 !important;
+
+    box-sizing: border-box !important;
+  }
+
+  /* OFFLINE READY — keep outside card */
+  .hero-visual::before {
+    content: "↯  OFFLINE READY" !important;
+
+    position: absolute !important;
+
+    top: 18px !important;
+    left: 0 !important;
+
+    right: auto !important;
+
+    transform: none !important;
+
+    padding: 8px 11px !important;
+
+    white-space: nowrap !important;
+
+    font-size: 7px !important;
+
+    z-index: 20 !important;
+  }
+
+  .hero-visual::after {
+    display: none !important;
+  }
+
+  /* READY FOR FALLBACK */
+  .hero-visual .network-card {
+    position: absolute !important;
+
+    top: 0 !important;
+    right: 0 !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    width: 190px !important;
+
+    transform: scale(.68) !important;
+    transform-origin: right top !important;
+
+    z-index: 25 !important;
+  }
+
+  /* VOICE COMMAND */
+  .hero-visual .voice-card {
+    position: absolute !important;
+
+    top: auto !important;
+    right: 0 !important;
+    left: auto !important;
+
+    bottom: -28px !important;
+
+    width: 190px !important;
+
+    transform: scale(.68) !important;
+    transform-origin: right bottom !important;
+
+    z-index: 25 !important;
+  }
+
+  /* Keep voice card away from transaction rows */
+  .hero-visual .payment-ui {
+    overflow: visible !important;
+  }
+
+  /* HERO TEXT AFTER CARD */
+  .hero-content {
+    order: 2 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 0 auto !important;
+
+    transform: none !important;
+
+    text-align: left !important;
+  }
+
+  .hero-content .eyebrow {
+    margin-top: 0 !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(43px, 12.5vw, 62px) !important;
+    line-height: .92 !important;
+
+    margin-top: 18px !important;
+
+    letter-spacing: -0.055em !important;
+  }
+
+  .hero-description {
+    max-width: 100% !important;
+  }
+
+  /* Prevent buttons from causing horizontal overflow */
+  .hero-buttons {
+    width: 100% !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 10px !important;
+  }
+
+  .hero-buttons a {
+    max-width: 100% !important;
+  }
+
+  /* PAYMENT CARD INTERNAL SPACING */
+  .payment-ui .payment-top {
+    margin-bottom: 30px !important;
+  }
+
+  .payment-ui .balance {
+    font-size: clamp(42px, 12vw, 58px) !important;
+    white-space: nowrap !important;
+  }
+
+  .payment-ui .payment-actions {
+    gap: 10px !important;
+  }
+
+  .payment-ui .pay-action {
+    min-width: 0 !important;
+    flex: 1 !important;
+  }
+
+  .payment-ui .recent-header {
+    margin-top: 26px !important;
+  }
+
+}
+
+
+/* SMALL PHONES */
+@media (max-width: 380px) {
+
+  .hero {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  .hero-visual {
+    max-width: 100% !important;
+    margin-bottom: 38px !important;
+  }
+
+  .hero-visual .payment-ui {
+    margin-top: 65px !important;
+  }
+
+  .hero-visual .network-card {
+    width: 175px !important;
+    transform: scale(.60) !important;
+  }
+
+  .hero-visual .voice-card {
+    width: 175px !important;
+    transform: scale(.60) !important;
+    bottom: -24px !important;
+  }
+
+  .hero h1 {
+    font-size: 43px !important;
+  }
+
+  .payment-ui .payment-actions {
+    gap: 7px !important;
+  }
+
+  .payment-ui .pay-action {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+}
+
