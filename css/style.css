@@ -9758,3 +9758,156 @@ body {
 
 }
 
+
+
+
+
+/* OFFLINE READY — use real HTML badge */
+.hero-visual::before {
+  content: none !important;
+  display: none !important;
+}
+
+.hero-visual::after {
+  content: none !important;
+  display: none !important;
+}
+
+
+/* Independent offline badge */
+.hero-visual .offline-ready-badge {
+  position: absolute !important;
+
+  top: 28px !important;
+  left: -92px !important;
+
+  display: flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+
+  padding: 9px 13px !important;
+
+  border: 1px solid rgba(255,255,255,.10) !important;
+  border-radius: 999px !important;
+
+  background: rgba(9,13,27,.88) !important;
+  backdrop-filter: blur(16px) !important;
+
+  color: rgba(255,255,255,.55) !important;
+
+  font-size: 8px !important;
+  font-weight: 700 !important;
+  letter-spacing: .12em !important;
+
+  white-space: nowrap !important;
+
+  z-index: 4 !important;
+
+  pointer-events: none !important;
+}
+
+.hero-visual .offline-ready-badge span {
+  width: 5px !important;
+  height: 5px !important;
+
+  flex: 0 0 5px !important;
+
+  border-radius: 50% !important;
+
+  background: #25e7ad !important;
+
+  box-shadow: 0 0 12px rgba(37,231,173,.9) !important;
+}
+
+
+/* PHONE */
+@media (max-width: 650px) {
+
+  .hero-visual .offline-ready-badge {
+    top: 8px !important;
+    left: 50% !important;
+
+    transform: translateX(-50%) !important;
+
+    font-size: 7px !important;
+    padding: 7px 10px !important;
+
+    z-index: 4 !important;
+  }
+
+}
+
+
+/* VERY SMALL PHONE */
+@media (max-width: 380px) {
+
+  .hero-visual .offline-ready-badge {
+    top: 6px !important;
+    font-size: 6.5px !important;
+  }
+
+}
+
+@media (max-width: 650px) {
+  .hero-visual .offline-ready-badge {
+    top: -18px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-visual .offline-ready-badge {
+    top: -20px !important;
+  }
+}
+
+@media (max-width: 650px) {
+  .hero-visual .offline-ready-badge {
+    top: -32px !important;
+  }
+}
+
+@media (max-width: 380px) {
+  .hero-visual .offline-ready-badge {
+    top: -35px !important;
+  }
+}
+
+/* OFFLO-PAY: disable legacy pseudo badge */
+.hero-visual::before {
+  content: none !important;
+  display: none !important;
+}
+
+/* Independent OFFLINE READY badge */
+.hero-visual .offline-ready-badge {
+  position: absolute !important;
+  top: -38px !important;
+  left: 50% !important;
+  transform: translateX(-50%) !important;
+
+  display: flex !important;
+  align-items: center !important;
+  gap: 7px !important;
+
+  padding: 8px 12px !important;
+  border-radius: 999px !important;
+
+  white-space: nowrap !important;
+  z-index: 5 !important;
+  pointer-events: none !important;
+}
+
+.hero-visual .offline-ready-badge span {
+  width: 5px !important;
+  height: 5px !important;
+  flex: 0 0 5px !important;
+  border-radius: 50% !important;
+  background: #25e7ad !important;
+  box-shadow: 0 0 12px rgba(37,231,173,.8) !important;
+}
+
+@media (max-width: 380px) {
+  .hero-visual .offline-ready-badge {
+    top: -42px !important;
+  }
+}
