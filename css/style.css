@@ -5685,3 +5685,24 @@ svg {
   }
 }
 
+
+/* Offlo-Pay navbar logo */
+.offlopay-logo {
+  display: inline-flex !important;
+  align-items: center;
+  gap: 2px;
+  text-decoration: none;
+  line-height: 1;
+  font-weight: 700;
+  letter-spacing: -0.04em;
+}
+
+.offlopay-mark {
+  color: #20b4ff;
+  font-weight: 800;
+}
+
+.offlopay-logo span:last-child {
+  color: #8994aa;
+}
+
