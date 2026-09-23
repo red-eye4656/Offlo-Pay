@@ -6908,3 +6908,301 @@ header .offlopay-logo-name {
   }
 }
 
+
+/* =========================================================
+   OFFLO-PAY — FINAL MOBILE SAFE LAYOUT
+   ========================================================= */
+
+@media screen and (max-width: 900px) {
+
+  html,
+  body {
+    width: 100%;
+    max-width: 100%;
+    overflow-x: hidden !important;
+  }
+
+  .hero {
+    width: 100% !important;
+    min-height: auto !important;
+    height: auto !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    padding: 80px 16px 60px !important;
+    box-sizing: border-box !important;
+
+    overflow: hidden !important;
+  }
+
+  /* Visual area */
+  .hero-visual {
+    order: 1 !important;
+
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 390px !important;
+
+    height: 535px !important;
+    min-height: 535px !important;
+
+    margin: 0 auto 35px !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+
+    overflow: visible !important;
+  }
+
+  /* Main payment card */
+  .hero-visual .payment-ui {
+    position: absolute !important;
+
+    top: 72px !important;
+    left: 50% !important;
+
+    width: min(360px, calc(100vw - 32px)) !important;
+    max-width: 360px !important;
+
+    margin: 0 !important;
+
+    transform: translateX(-50%) !important;
+
+    box-sizing: border-box !important;
+
+    z-index: 10 !important;
+  }
+
+  /* Offline badge */
+  .hero-visual::before {
+    content: "↯  OFFLINE READY" !important;
+
+    position: absolute !important;
+
+    top: 30px !important;
+    left: 10px !important;
+
+    right: auto !important;
+
+    padding: 8px 11px !important;
+
+    border-radius: 12px !important;
+
+    white-space: nowrap !important;
+
+    font-size: 7px !important;
+    letter-spacing: .10em !important;
+
+    z-index: 50 !important;
+
+    box-sizing: border-box !important;
+  }
+
+  .hero-visual::after {
+    display: none !important;
+  }
+
+  /* Fallback status */
+  .hero-visual .network-card {
+    position: absolute !important;
+
+    top: 5px !important;
+    right: 5px !important;
+
+    left: auto !important;
+    bottom: auto !important;
+
+    transform: scale(.52) !important;
+    transform-origin: right top !important;
+
+    z-index: 40 !important;
+  }
+
+  /* Voice command */
+  .hero-visual .voice-card {
+    position: absolute !important;
+
+    right: 5px !important;
+    bottom: 5px !important;
+
+    left: auto !important;
+    top: auto !important;
+
+    transform: scale(.52) !important;
+    transform-origin: right bottom !important;
+
+    z-index: 40 !important;
+  }
+
+  /* Text comes after visual */
+  .hero-content {
+    order: 2 !important;
+
+    width: 100% !important;
+    max-width: 620px !important;
+
+    margin: 0 auto !important;
+
+    transform: none !important;
+
+    box-sizing: border-box !important;
+  }
+}
+
+
+/* =========================================================
+   NORMAL PHONES
+   ========================================================= */
+
+@media screen and (max-width: 600px) {
+
+  .hero {
+    padding: 72px 12px 50px !important;
+  }
+
+  .hero-visual {
+    max-width: 365px !important;
+
+    height: 500px !important;
+    min-height: 500px !important;
+  }
+
+  .hero-visual .payment-ui {
+    top: 68px !important;
+
+    width: min(350px, calc(100vw - 24px)) !important;
+    max-width: 350px !important;
+  }
+
+  .hero-visual::before {
+    top: 27px !important;
+    left: 2px !important;
+
+    font-size: 6.5px !important;
+    padding: 7px 9px !important;
+  }
+
+  .hero-visual .network-card {
+    top: 2px !important;
+    right: 0 !important;
+
+    transform: scale(.48) !important;
+  }
+
+  .hero-visual .voice-card {
+    right: 0 !important;
+    bottom: 2px !important;
+
+    transform: scale(.48) !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 13vw, 60px) !important;
+    line-height: .92 !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES — 320/360px
+   ========================================================= */
+
+@media screen and (max-width: 380px) {
+
+  .hero {
+    padding-left: 8px !important;
+    padding-right: 8px !important;
+  }
+
+  .hero-visual {
+    max-width: 350px !important;
+
+    height: 485px !important;
+    min-height: 485px !important;
+  }
+
+  .hero-visual .payment-ui {
+    top: 65px !important;
+
+    width: calc(100vw - 16px) !important;
+    max-width: 340px !important;
+  }
+
+  .hero-visual::before {
+    left: 0 !important;
+    top: 25px !important;
+
+    font-size: 6px !important;
+  }
+
+  .hero-visual .network-card {
+    transform: scale(.44) !important;
+  }
+
+  .hero-visual .voice-card {
+    transform: scale(.44) !important;
+  }
+}
+
+
+/* =========================================================
+   OFFLO-PAY — MOBILE TOUCH POLISH
+   ========================================================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  /* Remove browser tap highlight */
+  *,
+  *::before,
+  *::after {
+    -webkit-tap-highlight-color: transparent !important;
+    tap-highlight-color: transparent !important;
+  }
+
+  /* Remove unwanted focus outline on touch */
+  a,
+  button,
+  input,
+  textarea,
+  select {
+    -webkit-tap-highlight-color: transparent !important;
+  }
+
+  /* Keep keyboard accessibility */
+  a:focus-visible,
+  button:focus-visible {
+    outline: 2px solid rgba(37, 231, 173, .65) !important;
+    outline-offset: 3px !important;
+  }
+
+  /* Smoother touch interaction */
+  a,
+  button,
+  .pay-action,
+  .feature-card,
+  .team-card {
+    touch-action: manipulation;
+  }
+}
+
+
+@media (hover: none) and (pointer: coarse) {
+  img,
+  svg,
+  .logo,
+  .payment-ui,
+  .network-card,
+  .voice-card,
+  .hero-visual {
+    -webkit-user-select: none;
+    user-select: none;
+    -webkit-touch-callout: none;
+  }
+}
+
