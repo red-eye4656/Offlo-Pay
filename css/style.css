@@ -5621,3 +5621,22 @@ svg {
   }
 }
 
+
+@media (max-width: 900px) {
+  .hero-visual::before {
+    left: 50% !important;
+    top: -55px !important;
+    transform: translateX(-50%) !important;
+    white-space: nowrap !important;
+    z-index: 30 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-visual::before {
+    top: -48px !important;
+    transform: translateX(-50%) scale(.82) !important;
+    transform-origin: center !important;
+  }
+}
+
