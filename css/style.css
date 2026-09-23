@@ -5553,3 +5553,71 @@ svg {
   }
 }
 
+
+@media (max-width: 900px) {
+  .hero {
+    overflow-x: hidden !important;
+  }
+
+  .hero-visual {
+    left: auto !important;
+    right: auto !important;
+    width: 100% !important;
+    max-width: 600px !important;
+    margin: 0 auto !important;
+    overflow: visible !important;
+  }
+
+  .hero-visual .payment-ui {
+    position: relative !important;
+    margin: 0 auto !important;
+    left: auto !important;
+    right: auto !important;
+  }
+
+  .hero-visual .fallback-status {
+    left: 12px !important;
+    right: auto !important;
+    top: 70px !important;
+    transform: scale(.82) !important;
+    transform-origin: left center !important;
+    z-index: 20 !important;
+  }
+
+  .hero-visual .network-card {
+    right: 12px !important;
+    left: auto !important;
+    top: 15px !important;
+    transform: scale(.82) !important;
+    transform-origin: right top !important;
+    z-index: 20 !important;
+  }
+
+  .hero-visual .voice-card {
+    right: 12px !important;
+    left: auto !important;
+    bottom: 20px !important;
+    transform: scale(.82) !important;
+    transform-origin: right bottom !important;
+    z-index: 20 !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-visual .fallback-status {
+    left: 5px !important;
+    top: 65px !important;
+    transform: scale(.72) !important;
+  }
+
+  .hero-visual .network-card {
+    right: 5px !important;
+    transform: scale(.72) !important;
+  }
+
+  .hero-visual .voice-card {
+    right: 5px !important;
+    transform: scale(.72) !important;
+  }
+}
+
