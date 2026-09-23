@@ -251,3 +251,46 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+/* =========================================================
+   OFFLO-PAY — MOBILE TAP UX
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const interactiveElements = document.querySelectorAll(
+    "a, button, .pay-action"
+  );
+
+  interactiveElements.forEach((element) => {
+
+    element.addEventListener(
+      "touchstart",
+      () => {
+        element.classList.add("touching");
+      },
+      { passive: true }
+    );
+
+    element.addEventListener(
+      "touchend",
+      () => {
+        element.classList.remove("touching");
+      },
+      { passive: true }
+    );
+
+    element.addEventListener(
+      "touchcancel",
+      () => {
+        element.classList.remove("touching");
+      },
+      { passive: true }
+    );
+
+  });
+
+});
+
+
