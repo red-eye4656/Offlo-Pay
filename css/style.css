@@ -5859,3 +5859,147 @@ header .logo-mark {
   }
 }
 
+
+/* =========================================
+   X-PAY — RESPONSIVE / SPLIT SCREEN FIX
+========================================= */
+
+@media (max-width: 1100px) {
+
+  .hero {
+    min-height: auto;
+    padding-bottom: 90px;
+  }
+
+  .hero-content {
+    max-width: 52%;
+  }
+
+  .hero-visual {
+    width: 44%;
+    min-width: 0;
+  }
+
+  .hero-visual .network-card,
+  .hero-visual .voice-card,
+  .hero-visual .payment-card {
+    max-width: 100%;
+    box-sizing: border-box;
+  }
+
+}
+
+@media (max-width: 900px) {
+
+  .hero {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+  }
+
+  .hero-content {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .hero-visual {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+  }
+
+  .hero-visual .network-card,
+  .hero-visual .voice-card,
+  .hero-visual .payment-card {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    left: auto !important;
+    bottom: auto !important;
+    transform: none !important;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+}
+
+@media (max-width: 650px) {
+
+  .hero {
+    padding-left: 20px;
+    padding-right: 20px;
+    gap: 35px;
+  }
+
+  .hero h1 {
+    font-size: clamp(42px, 12vw, 68px);
+    line-height: .95;
+  }
+
+  .hero-description {
+    max-width: 100%;
+  }
+
+  .hero-buttons {
+    flex-wrap: wrap;
+  }
+
+  .hero-visual {
+    width: 100%;
+  }
+
+  .hero-visual > * {
+    max-width: 100%;
+  }
+
+  .network-card,
+  .voice-card,
+  .payment-card {
+    width: 100%;
+  }
+
+}
+
+/* Very narrow split-screen windows */
+@media (max-width: 480px) {
+
+  .hero {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+
+  .hero-visual {
+    transform: none !important;
+  }
+
+  .network-card,
+  .voice-card,
+  .payment-card {
+    font-size: 13px;
+    padding: 14px !important;
+  }
+
+  .network-card strong,
+  .voice-card strong {
+    font-size: 12px;
+  }
+
+  .hero-info {
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+
+}
+
+/* Prevent accidental horizontal overflow */
+html,
+body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+img,
+svg {
+  max-width: 100%;
+}
+
