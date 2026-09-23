@@ -8168,3 +8168,174 @@ body {
 
 }
 
+
+
+/* =========================================================
+   OFFLO-PAY — PRODUCT DEMO MICRO INTERACTIONS
+   ========================================================= */
+
+.payment-ui {
+  will-change: transform;
+}
+
+.payment-ui .pay-action {
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform .22s ease,
+    border-color .22s ease,
+    background .22s ease,
+    box-shadow .22s ease;
+}
+
+.payment-ui .pay-action::after {
+  content: "";
+  position: absolute;
+
+  width: 80px;
+  height: 80px;
+
+  border-radius: 50%;
+
+  background: rgba(35, 190, 255, .10);
+
+  transform: scale(0);
+  opacity: 0;
+
+  transition:
+    transform .35s ease,
+    opacity .35s ease;
+
+  pointer-events: none;
+}
+
+.payment-ui .pay-action:active::after {
+  transform: scale(2);
+  opacity: 1;
+}
+
+.payment-ui .pay-action.demo-active {
+  transform: translateY(-2px);
+  border-color: rgba(40, 190, 255, .35);
+
+  box-shadow:
+    0 12px 30px rgba(20, 100, 255, .12);
+}
+
+
+/* Connection indicator */
+
+.payment-ui .connection {
+  transition:
+    border-color .3s ease,
+    background .3s ease;
+}
+
+.payment-ui .connection i {
+  animation: offloConnectionPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes offloConnectionPulse {
+
+  0%,
+  100% {
+    opacity: .65;
+    box-shadow: 0 0 0 rgba(37,231,173,0);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(37,231,173,.55);
+  }
+
+}
+
+
+/* Floating cards */
+
+.hero-visual .network-card {
+  animation: offloFloatNetwork 5s ease-in-out infinite;
+}
+
+.hero-visual .voice-card {
+  animation: offloFloatVoice 4.5s ease-in-out infinite;
+}
+
+@keyframes offloFloatNetwork {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-5px);
+  }
+
+}
+
+@keyframes offloFloatVoice {
+
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(5px);
+  }
+
+}
+
+
+/* Hero entrance */
+
+.hero-visual .payment-ui {
+  animation: offloCardEnter .75s cubic-bezier(.2,.8,.2,1) both;
+}
+
+@keyframes offloCardEnter {
+
+  from {
+    opacity: 0;
+    transform: translateY(22px) scale(.985);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+
+}
+
+
+/* Don't animate on reduced motion */
+
+@media (prefers-reduced-motion: reduce) {
+
+  .payment-ui .connection i,
+  .hero-visual .network-card,
+  .hero-visual .voice-card,
+  .hero-visual .payment-ui {
+    animation: none !important;
+  }
+
+}
+
+
+/* Mobile: keep everything subtle */
+
+@media (max-width: 600px) {
+
+  .hero-visual .network-card,
+  .hero-visual .voice-card {
+    animation-duration: 6s;
+  }
+
+  .payment-ui .pay-action:active {
+    transform: scale(.97) !important;
+  }
+
+}
+

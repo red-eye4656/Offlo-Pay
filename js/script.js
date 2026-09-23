@@ -218,3 +218,36 @@ window.addEventListener("resize", () => {
   }
 
 });
+
+
+/* =========================================================
+   OFFLO-PAY — PAYMENT UI DEMO INTERACTION
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const actions = document.querySelectorAll(".payment-ui .pay-action");
+
+  if (!actions.length) return;
+
+  actions.forEach((action) => {
+
+    action.addEventListener("click", () => {
+
+      actions.forEach((item) => {
+        item.classList.remove("demo-active");
+      });
+
+      action.classList.add("demo-active");
+
+      window.setTimeout(() => {
+        action.classList.remove("demo-active");
+      }, 650);
+
+    });
+
+  });
+
+});
+
+
