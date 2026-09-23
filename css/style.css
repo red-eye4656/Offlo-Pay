@@ -7891,3 +7891,280 @@ button {
 
 }
 
+
+
+/* =========================================================
+   OFFLO-PAY — MOBILE UX POLISH v2
+   ========================================================= */
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overscroll-behavior-x: none;
+}
+
+/* Prevent accidental selection on interactive UI */
+.navbar,
+.hero-buttons,
+.payment-actions,
+.network-card,
+.voice-card,
+.coming-soon-badge,
+.logo {
+  -webkit-user-select: none;
+  user-select: none;
+}
+
+
+/* =========================
+   MOBILE NAVBAR
+   ========================= */
+
+@media (max-width: 900px) {
+
+  .navbar {
+    width: 100% !important;
+    position: relative !important;
+    z-index: 1000 !important;
+  }
+
+  .navbar .logo {
+    flex-shrink: 0 !important;
+  }
+
+  .navbar .menu-toggle,
+  .navbar button {
+    min-width: 44px !important;
+    min-height: 44px !important;
+  }
+
+}
+
+
+/* =========================
+   TOUCH FEEDBACK
+   ========================= */
+
+@media (hover: none) and (pointer: coarse) {
+
+  a,
+  button,
+  .pay-action,
+  .feature-card,
+  .team-card {
+
+    transition:
+      transform .15s ease,
+      opacity .15s ease,
+      background .15s ease !important;
+  }
+
+  a:active,
+  button:active,
+  .pay-action:active {
+
+    transform: scale(.97) !important;
+  }
+
+  .hero-buttons a:active {
+    opacity: .82 !important;
+  }
+
+}
+
+
+/* =========================
+   PAYMENT ACTIONS
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .payment-ui .payment-actions {
+    width: 100% !important;
+    display: grid !important;
+    grid-template-columns: repeat(3, minmax(0, 1fr)) !important;
+  }
+
+  .payment-ui .pay-action {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: center !important;
+
+    min-height: 78px !important;
+
+    overflow: hidden !important;
+  }
+
+  .payment-ui .pay-action div {
+    font-size: 22px !important;
+    line-height: 1 !important;
+  }
+
+  .payment-ui .pay-action span {
+    margin-top: 9px !important;
+  }
+
+
+  /* Recent activity */
+  .payment-ui .recent-header {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: space-between !important;
+
+    gap: 12px !important;
+  }
+
+
+  /* Don't let decorative voice card cover transactions */
+  .hero-visual .voice-card {
+    pointer-events: none !important;
+  }
+
+  .hero-visual .network-card {
+    pointer-events: none !important;
+  }
+
+
+  /* Hero buttons */
+  .hero-buttons {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+    width: 100% !important;
+  }
+
+  .hero-buttons a {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    display: flex !important;
+    justify-content: center !important;
+    align-items: center !important;
+
+    text-align: center !important;
+  }
+
+}
+
+
+/* =========================
+   VERY SMALL PHONE
+   ========================= */
+
+@media (max-width: 380px) {
+
+  .hero-buttons {
+    grid-template-columns: 1fr !important;
+  }
+
+  .payment-ui .pay-action {
+    min-height: 70px !important;
+  }
+
+  .payment-ui .pay-action div {
+    font-size: 20px !important;
+  }
+
+}
+
+
+/* =========================
+   FOOTER MOBILE
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .footer-main {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: flex-start !important;
+
+    gap: 22px !important;
+  }
+
+  .footer-logo {
+    max-width: 100% !important;
+  }
+
+  .footer-tagline {
+    max-width: 280px !important;
+  }
+
+  .footer-contact {
+    max-width: 100% !important;
+    overflow-wrap: anywhere !important;
+  }
+
+}
+
+
+/* =========================
+   MOBILE SECTION SPACING
+   ========================= */
+
+@media (max-width: 600px) {
+
+  .section {
+    padding-top: 75px !important;
+    padding-bottom: 75px !important;
+  }
+
+  .section:first-child {
+    padding-top: 0 !important;
+  }
+
+  .features-grid,
+  .team-grid {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .feature-card,
+  .xoro-card,
+  .team-card {
+    width: 100% !important;
+    min-width: 0 !important;
+  }
+
+}
+
+
+/* =========================
+   NO HORIZONTAL LEAK
+   ========================= */
+
+@media (max-width: 600px) {
+
+  img,
+  svg,
+  video,
+  canvas {
+    max-width: 100%;
+  }
+
+  .hero *,
+  .section *,
+  footer * {
+    max-width: 100%;
+  }
+
+}
+
+
+/* =========================
+   REDUCE MOTION
+   ========================= */
+
+@media (prefers-reduced-motion: reduce) {
+
+  html {
+    scroll-behavior: auto !important;
+  }
+
+}
+
