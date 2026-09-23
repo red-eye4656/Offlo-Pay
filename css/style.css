@@ -9722,3 +9722,39 @@ body {
 
 }
 
+
+
+/* =========================================================
+   OFFLO-PAY — PAYMENT CARD CONTINUOUS MOTION
+   Works on touch devices without relying on :hover
+   ========================================================= */
+
+@keyframes offloPaymentFloat {
+  0%, 100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(-7px);
+  }
+}
+
+@media (max-width: 900px) {
+
+  .hero-visual .payment-ui {
+    animation:
+      offloPaymentFloat 5s ease-in-out infinite !important;
+
+    will-change: transform;
+  }
+
+}
+
+@media (prefers-reduced-motion: reduce) {
+
+  .hero-visual .payment-ui {
+    animation: none !important;
+  }
+
+}
+
