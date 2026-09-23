@@ -5706,3 +5706,20 @@ svg {
   color: #8994aa;
 }
 
+
+header .offlopay-navbar-logo {
+  display: inline-flex !important;
+  align-items: center !important;
+  width: auto !important;
+  text-decoration: none !important;
+}
+
+header .offlopay-logo-name {
+  display: inline-block !important;
+  color: #8994aa !important;
+  font-size: 1.05rem !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.04em !important;
+  white-space: nowrap !important;
+}
+
