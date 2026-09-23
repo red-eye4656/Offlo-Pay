@@ -5517,7 +5517,6 @@ svg {
   max-width: 100%;
 }
 
-/* Hero visual breathing space */
 @media (min-width: 901px) {
   .hero-visual {
     transform: translateY(45px);
