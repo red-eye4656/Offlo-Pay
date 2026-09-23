@@ -5537,3 +5537,10 @@ svg {
   }
 }
 
+
+@media (min-width: 901px) {
+  .hero-visual {
+    left: 160px !important;
+  }
+}
+
