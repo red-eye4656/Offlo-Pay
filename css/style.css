@@ -5723,3 +5723,159 @@ header .offlopay-logo-name {
   white-space: nowrap !important;
 }
 
+
+/* =========================================================
+   OFFLO-PAY — RESPONSIVE HERO FIX
+   Prevent floating UI cards from colliding on narrow screens
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    overflow: hidden !important;
+  }
+
+  .hero-visual {
+    position: relative !important;
+    width: min(100%, 620px) !important;
+    max-width: 620px !important;
+    min-height: 560px !important;
+    margin: 0 auto 40px !important;
+    left: auto !important;
+    right: auto !important;
+    overflow: visible !important;
+    display: block !important;
+  }
+
+  /* Main payment UI */
+  .hero-visual .payment-ui {
+    position: absolute !important;
+    width: min(390px, 78vw) !important;
+    max-width: 390px !important;
+    left: 50% !important;
+    right: auto !important;
+    top: 90px !important;
+    transform: translateX(-50%) !important;
+    z-index: 10 !important;
+  }
+
+  /* Offline Ready — completely separated from payment card */
+  .hero-visual::before {
+    left: 50% !important;
+    right: auto !important;
+    top: 32px !important;
+    transform: translateX(-50%) !important;
+
+    padding: 10px 14px !important;
+    white-space: nowrap !important;
+
+    z-index: 30 !important;
+  }
+
+  .hero-visual::after {
+    left: calc(50% - 92px) !important;
+    top: 51px !important;
+    z-index: 31 !important;
+  }
+
+  /* Payment network card */
+  .hero-visual .network-card {
+    top: 88px !important;
+    right: max(4vw, 12px) !important;
+    left: auto !important;
+    transform: scale(.78) !important;
+    transform-origin: right top !important;
+    z-index: 25 !important;
+  }
+
+  /* Voice command */
+  .hero-visual .voice-card {
+    right: max(4vw, 12px) !important;
+    left: auto !important;
+    bottom: 72px !important;
+    top: auto !important;
+    transform: scale(.78) !important;
+    transform-origin: right bottom !important;
+    z-index: 25 !important;
+  }
+
+  .hero-content {
+    position: relative !important;
+    z-index: 5 !important;
+    width: min(100%, 620px) !important;
+    margin: 0 auto !important;
+  }
+}
+
+
+/* Smaller phones */
+@media (max-width: 600px) {
+
+  .hero-visual {
+    min-height: 500px !important;
+  }
+
+  .hero-visual .payment-ui {
+    width: min(360px, 86vw) !important;
+    top: 82px !important;
+  }
+
+  .hero-visual::before {
+    top: 24px !important;
+    font-size: 8px !important;
+    padding: 9px 12px !important;
+  }
+
+  .hero-visual::after {
+    top: 43px !important;
+  }
+
+  .hero-visual .network-card {
+    top: 76px !important;
+    right: 3vw !important;
+    transform: scale(.68) !important;
+  }
+
+  .hero-visual .voice-card {
+    right: 3vw !important;
+    bottom: 55px !important;
+    transform: scale(.68) !important;
+  }
+}
+
+
+/* Very narrow phones */
+@media (max-width: 430px) {
+
+  .hero-visual {
+    min-height: 450px !important;
+  }
+
+  .hero-visual .payment-ui {
+    width: 88vw !important;
+    top: 75px !important;
+  }
+
+  /* Keep the network card away from the main card */
+  .hero-visual .network-card {
+    top: 58px !important;
+    right: 1vw !important;
+    transform: scale(.58) !important;
+  }
+
+  .hero-visual .voice-card {
+    right: 1vw !important;
+    bottom: 45px !important;
+    transform: scale(.58) !important;
+  }
+
+  .hero-visual::before {
+    top: 20px !important;
+    transform: translateX(-50%) scale(.9) !important;
+  }
+
+  .hero-visual::after {
+    display: none !important;
+  }
+}
+
