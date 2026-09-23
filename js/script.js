@@ -294,3 +294,70 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+
+/* =========================================================
+   OFFLO-PAY — MOBILE MENU
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const toggle =
+    document.querySelector(".mobile-menu-toggle");
+
+  const panel =
+    document.querySelector(".mobile-menu-panel");
+
+  if (!toggle || !panel) return;
+
+
+  const closeMenu = () => {
+
+    toggle.classList.remove("is-open");
+
+    toggle.setAttribute(
+      "aria-expanded",
+      "false"
+    );
+
+  };
+
+
+  toggle.addEventListener("click", () => {
+
+    const isOpen =
+      toggle.classList.toggle("is-open");
+
+    toggle.setAttribute(
+      "aria-expanded",
+      String(isOpen)
+    );
+
+  });
+
+
+  panel.querySelectorAll("a").forEach((link) => {
+
+    link.addEventListener("click", () => {
+
+      closeMenu();
+
+    });
+
+  });
+
+
+  document.addEventListener("click", (event) => {
+
+    if (
+      !toggle.contains(event.target) &&
+      !panel.contains(event.target)
+    ) {
+      closeMenu();
+    }
+
+  });
+
+});
+
+
