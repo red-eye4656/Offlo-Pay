@@ -6062,3 +6062,244 @@ header .offlopay-logo-name {
   }
 }
 
+
+/* =========================================================
+   OFFLO-PAY — CLEAN MOBILE HERO
+   Final override: mobile only
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 0 !important;
+    padding: 105px 16px 70px !important;
+    min-height: auto !important;
+    overflow: visible !important;
+  }
+
+  /* Text below the payment UI */
+  .hero-content {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 620px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Payment visual area */
+  .hero-visual {
+    order: 1 !important;
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 390px !important;
+
+    height: 560px !important;
+    min-height: 560px !important;
+
+    margin: 0 auto 35px !important;
+
+    left: auto !important;
+    right: auto !important;
+
+    display: block !important;
+    overflow: visible !important;
+
+    transform: none !important;
+  }
+
+  /* MAIN PAYMENT CARD */
+  .hero-visual .payment-ui {
+    position: absolute !important;
+
+    top: 82px !important;
+    left: 50% !important;
+    right: auto !important;
+
+    width: calc(100vw - 32px) !important;
+    max-width: 370px !important;
+
+    margin: 0 !important;
+
+    transform: translateX(-50%) !important;
+
+    z-index: 10 !important;
+  }
+
+  /* OFFLINE READY */
+  .hero-visual::before {
+    content: "↯  OFFLINE READY" !important;
+
+    position: absolute !important;
+
+    top: 18px !important;
+    left: 16px !important;
+    right: auto !important;
+
+    transform: none !important;
+
+    padding: 9px 13px !important;
+
+    white-space: nowrap !important;
+
+    font-size: 8px !important;
+    letter-spacing: .11em !important;
+
+    z-index: 50 !important;
+  }
+
+  .hero-visual::after {
+    left: 8px !important;
+    top: 40px !important;
+
+    z-index: 51 !important;
+  }
+
+  /* READY FOR FALLBACK */
+  .hero-visual .network-card {
+    position: absolute !important;
+
+    top: 18px !important;
+    right: 8px !important;
+    left: auto !important;
+    bottom: auto !important;
+
+    width: max-content !important;
+    min-width: 0 !important;
+    max-width: 185px !important;
+
+    margin: 0 !important;
+
+    transform: scale(.68) !important;
+    transform-origin: right top !important;
+
+    z-index: 45 !important;
+
+    animation: none !important;
+  }
+
+  /* VOICE COMMAND */
+  .hero-visual .voice-card {
+    position: absolute !important;
+
+    top: auto !important;
+    right: 8px !important;
+    left: auto !important;
+    bottom: 20px !important;
+
+    width: max-content !important;
+    max-width: 220px !important;
+
+    margin: 0 !important;
+
+    transform: scale(.68) !important;
+    transform-origin: right bottom !important;
+
+    z-index: 45 !important;
+  }
+
+  /* Prevent generic mobile rules from stretching cards */
+  .hero-visual > .network-card,
+  .hero-visual > .voice-card,
+  .hero-visual > .payment-ui {
+    box-sizing: border-box !important;
+  }
+
+  /* Better mobile heading */
+  .hero h1 {
+    font-size: clamp(46px, 13vw, 68px) !important;
+    line-height: .91 !important;
+    letter-spacing: -.07em !important;
+  }
+
+  .hero-description {
+    max-width: 100% !important;
+    font-size: .95rem !important;
+    line-height: 1.65 !important;
+  }
+
+}
+
+
+/* SMALL PHONES */
+
+@media (max-width: 500px) {
+
+  .hero {
+    padding: 92px 14px 60px !important;
+  }
+
+  .hero-visual {
+    width: 100% !important;
+    max-width: 360px !important;
+    height: 515px !important;
+    min-height: 515px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .hero-visual .payment-ui {
+    top: 72px !important;
+    width: calc(100vw - 28px) !important;
+    max-width: 350px !important;
+  }
+
+  .hero-visual::before {
+    top: 12px !important;
+    left: 8px !important;
+
+    padding: 8px 10px !important;
+    font-size: 7px !important;
+  }
+
+  .hero-visual::after {
+    display: none !important;
+  }
+
+  .hero-visual .network-card {
+    top: 10px !important;
+    right: 2px !important;
+
+    transform: scale(.57) !important;
+    transform-origin: right top !important;
+  }
+
+  .hero-visual .voice-card {
+    right: 2px !important;
+    bottom: 8px !important;
+
+    transform: scale(.57) !important;
+    transform-origin: right bottom !important;
+  }
+
+}
+
+
+/* VERY SMALL PHONES */
+
+@media (max-width: 380px) {
+
+  .hero-visual {
+    height: 490px !important;
+    min-height: 490px !important;
+  }
+
+  .hero-visual .payment-ui {
+    top: 70px !important;
+    width: calc(100vw - 24px) !important;
+  }
+
+  .hero-visual .network-card {
+    transform: scale(.52) !important;
+  }
+
+  .hero-visual .voice-card {
+    transform: scale(.52) !important;
+  }
+
+  .hero h1 {
+    font-size: 43px !important;
+  }
+
+}
+
