@@ -9097,3 +9097,254 @@ body {
 
 }
 
+
+
+/* =========================================================
+   OFFLO-PAY — FINAL MOBILE HERO LAYOUT
+   No overlap / clean hierarchy
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero-visual {
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 390px !important;
+
+    height: auto !important;
+    min-height: 0 !important;
+
+    margin: 35px auto 45px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+
+    gap: 14px !important;
+
+    left: auto !important;
+    right: auto !important;
+
+    overflow: visible !important;
+  }
+
+
+  /* Hide decorative pseudo badges on mobile.
+     The actual cards remain visible. */
+
+  .hero-visual::before,
+  .hero-visual::after {
+    display: none !important;
+  }
+
+
+  /* Main payment UI */
+
+  .hero-visual .payment-ui {
+
+    position: relative !important;
+
+    order: 1 !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: calc(100vw - 32px) !important;
+    max-width: 370px !important;
+
+    margin: 0 auto !important;
+
+    transform: none !important;
+
+    z-index: 3 !important;
+
+    box-sizing: border-box !important;
+  }
+
+
+  /* Fallback card */
+
+  .hero-visual .network-card {
+
+    position: relative !important;
+
+    order: 2 !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: min(92%, 330px) !important;
+    max-width: 330px !important;
+
+    margin: 0 auto !important;
+
+    transform: none !important;
+
+    transform-origin: center !important;
+
+    z-index: 4 !important;
+  }
+
+
+  /* Voice card */
+
+  .hero-visual .voice-card {
+
+    position: relative !important;
+
+    order: 3 !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    width: min(92%, 330px) !important;
+    max-width: 330px !important;
+
+    margin: 0 auto !important;
+
+    transform: none !important;
+
+    transform-origin: center !important;
+
+    z-index: 4 !important;
+  }
+
+
+  /* Remove old absolute positioning */
+
+  .hero-visual .offline-card,
+  .hero-visual .offline-ready,
+  .hero-visual [class*="offline"] {
+
+    position: relative !important;
+
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+  }
+
+
+  /* Keep hero content below visual */
+
+  .hero-content {
+
+    position: relative !important;
+
+    order: 2 !important;
+
+    width: 100% !important;
+
+    max-width: 620px !important;
+
+    margin: 0 auto !important;
+
+    transform: none !important;
+  }
+
+}
+
+
+@media (max-width: 600px) {
+
+  .hero {
+
+    padding-left: 14px !important;
+    padding-right: 14px !important;
+  }
+
+
+  .hero-visual {
+
+    max-width: 360px !important;
+
+    margin-top: 25px !important;
+    margin-bottom: 40px !important;
+
+    gap: 12px !important;
+  }
+
+
+  .hero-visual .payment-ui {
+
+    width: calc(100vw - 28px) !important;
+
+    max-width: 350px !important;
+
+    padding: 21px !important;
+
+    border-radius: 25px !important;
+  }
+
+
+  .hero-visual .network-card,
+  .hero-visual .voice-card {
+
+    width: calc(100% - 20px) !important;
+
+    max-width: 330px !important;
+
+    transform: none !important;
+  }
+
+}
+
+
+@media (max-width: 380px) {
+
+  .hero {
+
+    padding-left: 10px !important;
+    padding-right: 10px !important;
+  }
+
+
+  .hero-visual {
+
+    max-width: 340px !important;
+
+    gap: 10px !important;
+  }
+
+
+  .hero-visual .payment-ui {
+
+    width: calc(100vw - 20px) !important;
+
+    padding: 18px !important;
+  }
+
+
+  .hero-visual .network-card,
+  .hero-visual .voice-card {
+
+    width: calc(100% - 12px) !important;
+  }
+
+}
+
+
+/* Prevent ugly mobile tap highlight */
+
+@media (max-width: 900px) {
+
+  a,
+  button,
+  .pay-action,
+  .feature-card,
+  .team-card {
+
+    -webkit-tap-highlight-color: transparent;
+  }
+
+}
+
