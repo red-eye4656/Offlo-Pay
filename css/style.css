@@ -9911,3 +9911,169 @@ body {
     top: -42px !important;
   }
 }
+
+/* =========================================================
+   OFFLO-PAY — PREMIUM MICRO INTERACTIONS
+   Does not modify payment card floating animation
+   ========================================================= */
+
+/* Logo breathing glow */
+.offlopay-navbar-logo {
+  transition:
+    transform .35s cubic-bezier(.2,.8,.2,1),
+    filter .35s ease;
+}
+
+.offlopay-navbar-logo:hover {
+  transform: translateY(-1px);
+  filter:
+    drop-shadow(0 0 10px rgba(255,255,255,.18))
+    drop-shadow(0 0 22px rgba(37,231,173,.12));
+}
+
+
+/* Navbar contact button */
+.nav-button {
+  position: relative;
+  overflow: hidden;
+  transition:
+    transform .3s cubic-bezier(.2,.8,.2,1),
+    border-color .3s ease,
+    background .3s ease;
+}
+
+.nav-button::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -120%;
+  width: 70%;
+  height: 100%;
+  transform: skewX(-20deg);
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255,255,255,.16),
+    transparent
+  );
+  transition: left .65s ease;
+}
+
+.nav-button:hover {
+  transform: translateY(-2px);
+}
+
+.nav-button:hover::after {
+  left: 140%;
+}
+
+
+/* Feature card premium hover */
+.feature-card {
+  transition:
+    transform .4s cubic-bezier(.2,.8,.2,1),
+    border-color .35s ease,
+    box-shadow .4s ease;
+}
+
+.feature-card:hover {
+  border-color: rgba(255,255,255,.18);
+  box-shadow:
+    0 18px 50px rgba(0,0,0,.28),
+    0 0 30px rgba(37,231,173,.045);
+}
+
+
+/* Team card hover */
+.team-card {
+  transition:
+    transform .4s cubic-bezier(.2,.8,.2,1),
+    border-color .35s ease;
+}
+
+.team-card:hover {
+  transform: translateY(-5px);
+  border-color: rgba(255,255,255,.16);
+}
+
+
+/* Contact email interaction */
+.contact-email,
+.footer-contact {
+  transition:
+    transform .3s cubic-bezier(.2,.8,.2,1),
+    opacity .3s ease;
+}
+
+.contact-email:hover,
+.footer-contact:hover {
+  transform: translateX(5px);
+}
+
+
+/* Small green status indicators */
+.connection i,
+.contact-dot {
+  animation:
+    offloStatusPulse 2.4s ease-in-out infinite;
+}
+
+@keyframes offloStatusPulse {
+
+  0%, 100% {
+    opacity: .65;
+    box-shadow: 0 0 0 rgba(37,231,173,0);
+  }
+
+  50% {
+    opacity: 1;
+    box-shadow: 0 0 12px rgba(37,231,173,.5);
+  }
+
+}
+
+
+/* Smooth buttons */
+button,
+a {
+  -webkit-tap-highlight-color: transparent;
+}
+
+.nav-button,
+.contact-email,
+.footer-contact,
+.pay-action {
+  will-change: transform;
+}
+
+
+/* Touch devices: keep things calm */
+@media (hover: none) and (pointer: coarse) {
+
+  .nav-button:hover,
+  .feature-card:hover,
+  .team-card:hover,
+  .contact-email:hover,
+  .footer-contact:hover {
+    transform: none;
+  }
+
+}
+
+
+/* Accessibility */
+@media (prefers-reduced-motion: reduce) {
+
+  .offlopay-navbar-logo,
+  .nav-button,
+  .feature-card,
+  .team-card,
+  .contact-email,
+  .footer-contact,
+  .connection i,
+  .contact-dot {
+    animation: none !important;
+    transition: none !important;
+  }
+
+}
