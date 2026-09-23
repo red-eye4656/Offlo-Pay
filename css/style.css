@@ -6690,3 +6690,221 @@ header .offlopay-logo-name {
   }
 }
 
+
+/* =========================================================
+   OFFLO-PAY — CLEAN RESPONSIVE HERO
+   ========================================================= */
+
+@media (max-width: 900px) {
+
+  .hero {
+    display: flex !important;
+    flex-direction: column !important;
+    min-height: auto !important;
+    height: auto !important;
+    padding: 88px 16px 70px !important;
+    overflow: hidden !important;
+  }
+
+  .hero-content {
+    order: 2 !important;
+    width: 100% !important;
+    max-width: 620px !important;
+    margin: 0 auto !important;
+  }
+
+  .hero-visual {
+    order: 1 !important;
+    position: relative !important;
+
+    width: 100% !important;
+    max-width: 410px !important;
+    height: 540px !important;
+    min-height: 540px !important;
+
+    margin: 0 auto 30px !important;
+
+    left: auto !important;
+    right: auto !important;
+    top: auto !important;
+    bottom: auto !important;
+
+    transform: none !important;
+    overflow: visible !important;
+  }
+
+  /* MAIN PAYMENT UI */
+  .hero-visual .payment-ui {
+    position: absolute !important;
+
+    width: min(360px, calc(100vw - 32px)) !important;
+    max-width: 360px !important;
+
+    left: 50% !important;
+    right: auto !important;
+    top: 72px !important;
+
+    margin: 0 !important;
+
+    transform: translateX(-50%) !important;
+
+    z-index: 10 !important;
+  }
+
+  /* OFFLINE READY */
+  .hero-visual::before {
+    content: "↯  OFFLINE READY" !important;
+
+    position: absolute !important;
+
+    left: 14px !important;
+    top: 30px !important;
+
+    right: auto !important;
+
+    padding: 8px 11px !important;
+
+    border-radius: 12px !important;
+
+    white-space: nowrap !important;
+
+    font-size: 7px !important;
+    letter-spacing: .11em !important;
+
+    z-index: 30 !important;
+  }
+
+  .hero-visual::after {
+    left: 7px !important;
+    top: 50px !important;
+
+    z-index: 31 !important;
+  }
+
+  /* FALLBACK */
+  .hero-visual .network-card {
+    position: absolute !important;
+
+    top: 10px !important;
+    right: 8px !important;
+
+    left: auto !important;
+    bottom: auto !important;
+
+    transform: scale(.58) !important;
+    transform-origin: right top !important;
+
+    z-index: 25 !important;
+  }
+
+  /* VOICE */
+  .hero-visual .voice-card {
+    position: absolute !important;
+
+    right: 8px !important;
+    bottom: 8px !important;
+
+    left: auto !important;
+    top: auto !important;
+
+    transform: scale(.58) !important;
+    transform-origin: right bottom !important;
+
+    z-index: 25 !important;
+  }
+}
+
+
+/* =========================================================
+   PHONE
+   ========================================================= */
+
+@media (max-width: 600px) {
+
+  .hero {
+    padding: 78px 12px 55px !important;
+  }
+
+  .hero-visual {
+    max-width: 370px !important;
+    height: 510px !important;
+    min-height: 510px !important;
+    margin-bottom: 25px !important;
+  }
+
+  .hero-visual .payment-ui {
+    top: 70px !important;
+
+    width: min(350px, calc(100vw - 24px)) !important;
+    max-width: 350px !important;
+  }
+
+  .hero-visual::before {
+    left: 3px !important;
+    top: 28px !important;
+
+    padding: 7px 10px !important;
+    font-size: 6.5px !important;
+  }
+
+  .hero-visual::after {
+    display: none !important;
+  }
+
+  .hero-visual .network-card {
+    top: 3px !important;
+    right: 0 !important;
+
+    transform: scale(.50) !important;
+  }
+
+  .hero-visual .voice-card {
+    right: 0 !important;
+    bottom: 2px !important;
+
+    transform: scale(.50) !important;
+  }
+
+  .hero h1 {
+    font-size: clamp(43px, 13vw, 60px) !important;
+    line-height: .92 !important;
+  }
+}
+
+
+/* =========================================================
+   SMALL PHONES
+   ========================================================= */
+
+@media (max-width: 380px) {
+
+  .hero {
+    padding-left: 9px !important;
+    padding-right: 9px !important;
+  }
+
+  .hero-visual {
+    max-width: 350px !important;
+    height: 490px !important;
+    min-height: 490px !important;
+  }
+
+  .hero-visual .payment-ui {
+    top: 67px !important;
+    width: calc(100vw - 18px) !important;
+  }
+
+  .hero-visual::before {
+    left: 0 !important;
+    top: 27px !important;
+  }
+
+  .hero-visual .network-card {
+    transform: scale(.45) !important;
+  }
+
+  .hero-visual .voice-card {
+    transform: scale(.45) !important;
+  }
+}
+
