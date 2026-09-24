@@ -10492,3 +10492,37 @@ a {
   }
 }
 
+
+/* FINAL NAVBAR LOGO SIZE — keep inside navbar */
+.navbar .offlopay-navbar-logo {
+  width: auto !important;
+  min-width: 0 !important;
+  height: 64px !important;
+  display: flex !important;
+  align-items: center !important;
+  overflow: hidden !important;
+}
+
+.navbar .offlopay-navbar-logo .offlopay-logo-img {
+  width: auto !important;
+  height: 56px !important;
+  max-width: 220px !important;
+  max-height: 56px !important;
+  object-fit: contain !important;
+  object-position: center !important;
+  display: block !important;
+  transform: none !important;
+}
+
+@media (max-width: 650px) {
+  .navbar .offlopay-navbar-logo {
+    height: 60px !important;
+  }
+
+  .navbar .offlopay-navbar-logo .offlopay-logo-img {
+    height: 50px !important;
+    max-height: 50px !important;
+    max-width: 180px !important;
+  }
+}
+
