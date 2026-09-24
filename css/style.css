@@ -10232,3 +10232,26 @@ a {
   }
 }
 
+
+/* OFFLO-PAY LOGO — EXTRA LARGE */
+.offlopay-navbar-logo {
+  width: 300px !important;
+  min-width: 300px !important;
+}
+
+.offlopay-logo-img {
+  width: 300px !important;
+  max-width: none !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-navbar-logo {
+    width: 230px !important;
+    min-width: 230px !important;
+  }
+
+  .offlopay-logo-img {
+    width: 230px !important;
+  }
+}
+
