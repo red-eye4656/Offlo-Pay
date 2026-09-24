@@ -10156,3 +10156,18 @@ a {
     max-width: 155px !important;
   }
 }
+
+/* Premium Offlo-Pay Logo */
+.offlopay-logo-img {
+  width: 165px !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-logo-img {
+    width: 145px !important;
+  }
+}
+
