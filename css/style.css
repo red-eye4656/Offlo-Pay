@@ -10374,3 +10374,28 @@ a {
   }
 }
 
+
+/* Payment card — Offlo-Pay wordmark */
+.payment-ui .mini-logo {
+  width: auto !important;
+  height: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.payment-ui .mini-logo span {
+  display: block !important;
+  font-size: 17px !important;
+  font-weight: 700 !important;
+  letter-spacing: -0.035em !important;
+  line-height: 1 !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 650px) {
+  .payment-ui .mini-logo span {
+    font-size: 15px !important;
+  }
+}
+
