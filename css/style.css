@@ -10526,3 +10526,46 @@ a {
   }
 }
 
+
+/* FINAL — remove extra navbar logo container space/glow */
+.navbar .offlopay-navbar-logo {
+  width: fit-content !important;
+  min-width: 0 !important;
+  max-width: 220px !important;
+  padding: 0 !important;
+  margin: 0 !important;
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+  overflow: hidden !important;
+}
+
+.navbar .offlopay-navbar-logo::before,
+.navbar .offlopay-navbar-logo::after {
+  display: none !important;
+  content: none !important;
+}
+
+.navbar .offlopay-navbar-logo .offlopay-logo-img {
+  width: auto !important;
+  height: 56px !important;
+  max-width: 220px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  filter: none !important;
+  box-shadow: none !important;
+  transform: none !important;
+}
+
+@media (max-width: 650px) {
+  .navbar .offlopay-navbar-logo {
+    max-width: 180px !important;
+  }
+
+  .navbar .offlopay-navbar-logo .offlopay-logo-img {
+    height: 50px !important;
+    max-width: 180px !important;
+  }
+}
+
