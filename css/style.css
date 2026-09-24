@@ -10116,3 +10116,28 @@ a {
     width: 112px;
   }
 }
+
+/* =========================================================
+   OFFLO-PAY PREMIUM BRAND LOGO
+   ========================================================= */
+
+.offlopay-logo-img {
+  width: 142px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition:
+    transform .35s cubic-bezier(.2,.8,.2,1),
+    filter .35s ease;
+}
+
+.offlopay-logo-img:hover {
+  transform: translateY(-1px) scale(1.025);
+  filter: drop-shadow(0 0 14px rgba(32,217,255,.28));
+}
+
+@media (max-width: 650px) {
+  .offlopay-logo-img {
+    width: 118px;
+  }
+}
