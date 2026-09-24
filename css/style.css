@@ -10460,3 +10460,35 @@ a {
   }
 }
 
+
+/* OFFLO-PAY NAVBAR — 64-72px readable logo */
+.offlopay-navbar-logo {
+  height: 68px !important;
+  width: 300px !important;
+  min-width: 300px !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.offlopay-navbar-logo .offlopay-logo-img {
+  width: 300px !important;
+  height: 68px !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+  display: block !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-navbar-logo {
+    height: 64px !important;
+    width: 230px !important;
+    min-width: 230px !important;
+  }
+
+  .offlopay-navbar-logo .offlopay-logo-img {
+    width: 230px !important;
+    height: 64px !important;
+  }
+}
+
