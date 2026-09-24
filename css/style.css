@@ -10255,3 +10255,33 @@ a {
   }
 }
 
+
+/* Payment card — use the same Offlo-Pay branding */
+.payment-ui .mini-logo {
+  display: flex !important;
+  align-items: center !important;
+  width: 145px !important;
+  height: 32px !important;
+  overflow: hidden !important;
+}
+
+.payment-ui .mini-logo img {
+  width: 145px !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+  object-position: left center !important;
+}
+
+@media (max-width: 650px) {
+  .payment-ui .mini-logo {
+    width: 125px !important;
+    height: 29px !important;
+  }
+
+  .payment-ui .mini-logo img {
+    width: 125px !important;
+  }
+}
+
