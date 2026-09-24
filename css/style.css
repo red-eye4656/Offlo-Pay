@@ -10285,3 +10285,27 @@ a {
   }
 }
 
+
+/* THE OFFLO-PAY IDEA — branded logo */
+.difference-icon.offlopay-idea-logo {
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  overflow: hidden !important;
+}
+
+.difference-icon.offlopay-idea-logo img {
+  width: 58px !important;
+  height: 58px !important;
+  max-width: none !important;
+  object-fit: contain !important;
+  display: block !important;
+}
+
+@media (max-width: 650px) {
+  .difference-icon.offlopay-idea-logo img {
+    width: 52px !important;
+    height: 52px !important;
+  }
+}
+
