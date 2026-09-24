@@ -11612,3 +11612,30 @@ a.btn-primary,
   }
 }
 
+
+/* Smart Spending — fix heading/paragraph overlap */
+.spending-heading h2 {
+  line-height: 1.25 !important;
+  margin-top: 14px !important;
+  margin-bottom: 0 !important;
+  padding-bottom: 4px !important;
+}
+
+.spending-heading p {
+  margin-top: 28px !important;
+  padding-top: 0 !important;
+  line-height: 1.7 !important;
+  display: block !important;
+}
+
+@media (max-width: 600px) {
+  .spending-heading h2 {
+    line-height: 1.2 !important;
+    padding-bottom: 6px !important;
+  }
+
+  .spending-heading p {
+    margin-top: 22px !important;
+  }
+}
+
