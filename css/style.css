@@ -10097,3 +10097,22 @@ a {
     width: 112px;
   }
 }
+
+.offlopay-logo-img {
+  width: 125px;
+  height: auto;
+  display: block;
+  object-fit: contain;
+  transition: transform .3s ease, filter .3s ease;
+}
+
+.offlopay-logo-img:hover {
+  transform: translateY(-1px) scale(1.03);
+  filter: drop-shadow(0 0 12px rgba(50,190,255,.35));
+}
+
+@media (max-width: 650px) {
+  .offlopay-logo-img {
+    width: 112px;
+  }
+}
