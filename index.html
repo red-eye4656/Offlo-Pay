@@ -1090,6 +1090,184 @@
 
     </section>
 
+<section class="section spending-insights-section" id="spending-insights">
+
+  <div class="section-heading spending-heading">
+    <span class="mini-label">SMART SPENDING</span>
+
+    <h2>
+      Know where your money
+      <span class="gradient-text">goes.</span>
+    </h2>
+
+    <p>
+      Offlo-Pay turns your transaction history into simple
+      spending insights, budgets and useful suggestions.
+    </p>
+  </div>
+
+  <div class="spending-dashboard">
+
+    <div class="spending-summary-grid">
+
+      <div class="spending-summary-card">
+        <span>Today</span>
+        <strong id="spend-today">₹0</strong>
+        <small>Your daily spending</small>
+      </div>
+
+      <div class="spending-summary-card">
+        <span>This Week</span>
+        <strong id="spend-week">₹0</strong>
+        <small>Last 7 days</small>
+      </div>
+
+      <div class="spending-summary-card featured">
+        <span>This Month</span>
+        <strong id="spend-month">₹0</strong>
+        <small id="month-change">Compared with last month</small>
+      </div>
+
+      <div class="spending-summary-card">
+        <span>Monthly Budget</span>
+        <strong id="spend-budget">₹20,000</strong>
+        <small id="budget-left">₹20,000 remaining</small>
+      </div>
+
+    </div>
+
+    <div class="spending-main-grid">
+
+      <div class="spending-panel">
+
+        <div class="spending-panel-header">
+          <div>
+            <span class="mini-label">CATEGORY BREAKDOWN</span>
+            <h3>Where did my money go?</h3>
+          </div>
+        </div>
+
+        <div id="category-breakdown" class="category-breakdown"></div>
+
+      </div>
+
+      <div class="spending-panel">
+
+        <div class="spending-panel-header">
+          <div>
+            <span class="mini-label">MONTHLY BUDGET</span>
+            <h3>Stay on track</h3>
+          </div>
+        </div>
+
+        <div class="budget-ring-wrap">
+          <div class="budget-ring">
+            <div>
+              <strong id="budget-percent">0%</strong>
+              <small>used</small>
+            </div>
+          </div>
+        </div>
+
+        <div class="budget-input-row">
+          <input
+            id="budget-input"
+            type="number"
+            min="1000"
+            step="500"
+            value="20000"
+            placeholder="Monthly budget"
+          >
+
+          <button id="budget-save" type="button">
+            Save
+          </button>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="spending-main-grid">
+
+      <div class="spending-panel">
+
+        <div class="spending-panel-header">
+          <div>
+            <span class="mini-label">SPENDING TREND</span>
+            <h3>This month vs last month</h3>
+          </div>
+        </div>
+
+        <div class="trend-box">
+          <div class="trend-value" id="trend-value">0%</div>
+
+          <div class="trend-label" id="trend-label">
+            No change
+          </div>
+
+          <div class="trend-bars">
+
+            <div>
+              <span id="last-month-bar"></span>
+              <small>Last month</small>
+            </div>
+
+            <div>
+              <span id="this-month-bar"></span>
+              <small>This month</small>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
+
+      <div class="spending-panel insight-panel">
+
+        <div class="spending-panel-header">
+          <div>
+            <span class="mini-label">SMART INSIGHTS</span>
+            <h3>Personal suggestions</h3>
+          </div>
+        </div>
+
+        <div id="smart-suggestions" class="smart-suggestions"></div>
+
+      </div>
+
+    </div>
+
+    <div class="spending-panel transactions-insight-panel">
+
+      <div class="spending-panel-header transactions-header">
+
+        <div>
+          <span class="mini-label">TRANSACTION HISTORY</span>
+          <h3>Filter your spending</h3>
+        </div>
+
+        <select id="transaction-filter">
+          <option value="all">All categories</option>
+          <option value="Food">Food</option>
+          <option value="Shopping">Shopping</option>
+          <option value="Bills">Bills</option>
+          <option value="Travel">Travel</option>
+          <option value="Recharge">Recharge</option>
+          <option value="Money Transfer">Money Transfer</option>
+        </select>
+
+      </div>
+
+      <div id="insight-transactions" class="insight-transactions"></div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
     
 
     <section class="section team-section" id="team">

@@ -361,3 +361,335 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
+
+/* =========================================================
+   OFFLO-PAY — SMART SPENDING
+   ========================================================= */
+
+document.addEventListener("DOMContentLoaded", () => {
+
+  const root = document.querySelector("#spending-insights");
+
+  if (!root) return;
+
+  const transactions = [
+    { name: "Swiggy", category: "Food", amount: 620, day: 1 },
+    { name: "Amazon", category: "Shopping", amount: 1450, day: 2 },
+    { name: "Electricity Bill", category: "Bills", amount: 1850, day: 4 },
+    { name: "Uber", category: "Travel", amount: 540, day: 6 },
+    { name: "Jio Recharge", category: "Recharge", amount: 399, day: 8 },
+    { name: "Anshik", category: "Money Transfer", amount: 850, day: 10 },
+    { name: "Zomato", category: "Food", amount: 780, day: 12 },
+    { name: "Myntra", category: "Shopping", amount: 2200, day: 14 },
+    { name: "Netflix", category: "Bills", amount: 649, day: 17 },
+    { name: "IRCTC", category: "Travel", amount: 1250, day: 19 },
+    { name: "Airtel", category: "Recharge", amount: 599, day: 21 },
+    { name: "Swiggy", category: "Food", amount: 920, day: 22 }
+  ];
+
+  const previousMonth = {
+    Food: 1850,
+    Shopping: 2600,
+    Bills: 2400,
+    Travel: 1900,
+    Recharge: 1100,
+    "Money Transfer": 900
+  };
+
+  const categories = [
+    "Food",
+    "Shopping",
+    "Bills",
+    "Travel",
+    "Recharge",
+    "Money Transfer"
+  ];
+
+  const money = value =>
+    `₹${Math.round(value).toLocaleString("en-IN")}`;
+
+  const total = transactions.reduce(
+    (sum, item) => sum + item.amount,
+    0
+  );
+
+  const today = transactions
+    .filter(item => item.day >= 21)
+    .reduce((sum, item) => sum + item.amount, 0);
+
+  const week = transactions
+    .filter(item => item.day >= 15)
+    .reduce((sum, item) => sum + item.amount, 0);
+
+  let budget = Number(
+    localStorage.getItem("offloMonthlyBudget") || 20000
+  );
+
+  const categoryTotals = {};
+
+  categories.forEach(category => {
+    categoryTotals[category] = transactions
+      .filter(item => item.category === category)
+      .reduce((sum, item) => sum + item.amount, 0);
+  });
+
+  function renderSummary() {
+
+    document.querySelector("#spend-today").textContent =
+      money(today);
+
+    document.querySelector("#spend-week").textContent =
+      money(week);
+
+    document.querySelector("#spend-month").textContent =
+      money(total);
+
+    document.querySelector("#spend-budget").textContent =
+      money(budget);
+
+    const remaining = budget - total;
+
+    document.querySelector("#budget-left").textContent =
+      remaining >= 0
+        ? `${money(remaining)} remaining`
+        : `${money(Math.abs(remaining))} over budget`;
+  }
+
+  function renderCategories() {
+
+    const container =
+      document.querySelector("#category-breakdown");
+
+    const max =
+      Math.max(...Object.values(categoryTotals), 1);
+
+    container.innerHTML = categories.map(category => {
+
+      const amount = categoryTotals[category] || 0;
+
+      const percentage =
+        (amount / max) * 100;
+
+      return `
+        <div class="category-row">
+
+          <span class="category-name">
+            ${category}
+          </span>
+
+          <div class="category-bar">
+            <span style="width:${percentage}%"></span>
+          </div>
+
+          <span class="category-amount">
+            ${money(amount)}
+          </span>
+
+        </div>
+      `;
+
+    }).join("");
+  }
+
+  function renderBudget() {
+
+    const percent = Math.min(
+      Math.round((total / budget) * 100),
+      100
+    );
+
+    document.querySelector("#budget-percent")
+      .textContent = `${percent}%`;
+
+    const degrees = percent * 3.6;
+
+    document.querySelector(".budget-ring")
+      .style.background = `
+        radial-gradient(
+          circle at center,
+          #0B1418 58%,
+          transparent 59%
+        ),
+        conic-gradient(
+          #19E6C1 0deg,
+          #19E6C1 ${degrees}deg,
+          rgba(255,255,255,.07) ${degrees}deg
+        )
+      `;
+  }
+
+  function renderTrend() {
+
+    const previousTotal =
+      Object.values(previousMonth)
+        .reduce((sum, value) => sum + value, 0);
+
+    const change =
+      ((total - previousTotal) / previousTotal) * 100;
+
+    document.querySelector("#trend-value")
+      .textContent =
+      `${change >= 0 ? "+" : ""}${Math.round(change)}%`;
+
+    document.querySelector("#trend-label")
+      .textContent =
+      change > 0
+        ? "Spending is higher than last month"
+        : "Spending is lower than last month";
+
+    const max =
+      Math.max(previousTotal, total);
+
+    document.querySelector("#last-month-bar")
+      .style.height =
+      `${Math.max((previousTotal / max) * 100, 8)}%`;
+
+    document.querySelector("#this-month-bar")
+      .style.height =
+      `${Math.max((total / max) * 100, 8)}%`;
+  }
+
+  function renderSuggestions() {
+
+    const container =
+      document.querySelector("#smart-suggestions");
+
+    const suggestions = [];
+
+    categories.forEach(category => {
+
+      const current =
+        categoryTotals[category] || 0;
+
+      const previous =
+        previousMonth[category] || 0;
+
+      if (previous > 0 && current > previous * 1.15) {
+
+        suggestions.push({
+          title: "Overspending alert",
+          text:
+            `${category} spending is higher this month.`
+        });
+
+      }
+
+    });
+
+    const topCategory =
+      categories.reduce(
+        (best, category) =>
+          categoryTotals[category] >
+          categoryTotals[best]
+            ? category
+            : best,
+        categories[0]
+      );
+
+    suggestions.push({
+      title: "Smart suggestion",
+      text:
+        `${topCategory} is your highest spending category this month.`
+    });
+
+    suggestions.push({
+      title: "Budget status",
+      text:
+        total > budget
+          ? "You have crossed your monthly budget."
+          : `${money(budget - total)} is still available this month.`
+    });
+
+    container.innerHTML =
+      suggestions.slice(0, 3).map(item => `
+        <div class="smart-suggestion">
+
+          <strong>${item.title}</strong>
+
+          <span>${item.text}</span>
+
+        </div>
+      `).join("");
+  }
+
+  function renderTransactions(filter = "all") {
+
+    const container =
+      document.querySelector("#insight-transactions");
+
+    const filtered =
+      filter === "all"
+        ? transactions
+        : transactions.filter(
+            item => item.category === filter
+          );
+
+    container.innerHTML =
+      filtered.slice().reverse().map(item => `
+        <div class="insight-transaction">
+
+          <div class="transaction-category-icon">
+            ${item.category.charAt(0)}
+          </div>
+
+          <div>
+            <strong>${item.name}</strong>
+            <small>
+              ${item.category} · This month
+            </small>
+          </div>
+
+          <div class="insight-transaction-amount">
+            − ${money(item.amount)}
+          </div>
+
+        </div>
+      `).join("");
+  }
+
+  const budgetInput =
+    document.querySelector("#budget-input");
+
+  const budgetSave =
+    document.querySelector("#budget-save");
+
+  budgetInput.value = budget;
+
+  budgetSave.addEventListener("click", () => {
+
+    const value = Number(budgetInput.value);
+
+    if (!value || value < 1000) return;
+
+    budget = value;
+
+    localStorage.setItem(
+      "offloMonthlyBudget",
+      String(budget)
+    );
+
+    renderSummary();
+    renderBudget();
+    renderSuggestions();
+
+  });
+
+  document
+    .querySelector("#transaction-filter")
+    .addEventListener("change", event => {
+
+      renderTransactions(
+        event.target.value
+      );
+
+    });
+
+  renderSummary();
+  renderCategories();
+  renderBudget();
+  renderTrend();
+  renderSuggestions();
+  renderTransactions();
+
+});
+
