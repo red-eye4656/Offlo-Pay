@@ -10185,3 +10185,50 @@ a {
   }
 }
 
+
+.offlopay-navbar-logo {
+  display: flex !important;
+  align-items: center !important;
+}
+
+.offlopay-logo-img {
+  width: 180px !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-logo-img {
+    width: 150px !important;
+  }
+}
+
+
+/* OFFLO-PAY LOGO — BIG & CLEAR */
+.offlopay-navbar-logo {
+  display: flex !important;
+  align-items: center !important;
+  width: 240px !important;
+  min-width: 240px !important;
+}
+
+.offlopay-logo-img {
+  width: 240px !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-navbar-logo {
+    width: 190px !important;
+    min-width: 190px !important;
+  }
+
+  .offlopay-logo-img {
+    width: 190px !important;
+  }
+}
+
