@@ -3360,7 +3360,7 @@ footer {
 
 }
 
-.xoro-visual {
+.ovi-visual {
   background:
     radial-gradient(
       circle at center,
@@ -3369,7 +3369,7 @@ footer {
     );
 }
 
-.xoro-core {
+.ovi-core {
   width: 72px;
   height: 72px;
 
@@ -3397,10 +3397,10 @@ footer {
     rgba(77,91,255,.28);
 
   animation:
-    xoroPulse 3s ease-in-out infinite;
+    oviPulse 3s ease-in-out infinite;
 }
 
-.xoro-core span {
+.ovi-core span {
   font-size: 1.45rem;
 
   font-weight: 800;
@@ -3418,7 +3418,7 @@ footer {
   color: transparent;
 }
 
-.xoro-orbit {
+.ovi-orbit {
   position: absolute;
 
   border:
@@ -3433,7 +3433,7 @@ footer {
   height: 115px;
 
   animation:
-    xoroOrbit 5s linear infinite;
+    oviOrbit 5s linear infinite;
 }
 
 .orbit-two {
@@ -3443,10 +3443,10 @@ footer {
   opacity: .5;
 
   animation:
-    xoroOrbit 8s linear infinite reverse;
+    oviOrbit 8s linear infinite reverse;
 }
 
-.xoro-message {
+.ovi-message {
   position: absolute;
 
   bottom: 10px;
@@ -3471,7 +3471,7 @@ footer {
   backdrop-filter: blur(10px);
 }
 
-.xoro-message small {
+.ovi-message small {
   color: #707b93;
 
   font-size: .42rem;
@@ -3479,13 +3479,13 @@ footer {
   letter-spacing: .12em;
 }
 
-.xoro-message strong {
+.ovi-message strong {
   font-size: .56rem;
 
   color: #d8def0;
 }
 
-@keyframes xoroPulse {
+@keyframes oviPulse {
 
   0%,100% {
     transform: scale(1);
@@ -3497,7 +3497,7 @@ footer {
 
 }
 
-@keyframes xoroOrbit {
+@keyframes oviOrbit {
 
   from {
     transform: rotate(0deg);
@@ -4838,11 +4838,11 @@ header .logo-mark {
   min-height: 385px;
 }
 
-.xoro-card {
+.ovi-card {
   min-height: 385px;
 }
 
-.xoro-card .xoro-visual {
+.ovi-card .ovi-visual {
   min-height: 150px;
 
   display: flex;
@@ -4854,7 +4854,7 @@ header .logo-mark {
   position: relative;
 }
 
-.xoro-core {
+.ovi-core {
   width: 72px;
   height: 72px;
 
@@ -4878,7 +4878,7 @@ header .logo-mark {
     0 0 45px rgba(82,113,255,.22);
 }
 
-.xoro-core span {
+.ovi-core span {
   font-size: 1.35rem;
   font-weight: 800;
 
@@ -5092,7 +5092,7 @@ header .logo-mark {
     0 0 18px rgba(25,223,255,.08);
 }
 
-.xoro-icon {
+.ovi-icon {
   color: #9c70ff;
 
   border: 1px solid rgba(156,112,255,.18);
@@ -7780,7 +7780,7 @@ button {
 
   /* Cards shouldn't overflow viewport */
   .feature-card,
-  .xoro-card,
+  .ovi-card,
   .team-card {
     max-width: 100% !important;
   }
@@ -8125,7 +8125,7 @@ body {
   }
 
   .feature-card,
-  .xoro-card,
+  .ovi-card,
   .team-card {
     width: 100% !important;
     min-width: 0 !important;
@@ -8413,13 +8413,13 @@ body {
 
   .feature-card,
   .team-card,
-  .xoro-card {
+  .ovi-card {
     border-radius: 22px !important;
   }
 
   .feature-card:hover,
   .team-card:hover,
-  .xoro-card:hover {
+  .ovi-card:hover {
     transform: none !important;
   }
 
@@ -10848,10 +10848,10 @@ a.btn-primary,
   filter: none !important;
 }
 
-/* Keep Xoro AI purple accent intentionally */
-.xoro-ai,
-.xoro-ai *,
-.xoro-badge {
+/* Keep Ovi AI purple accent intentionally */
+.ovi-ai,
+.ovi-ai *,
+.ovi-badge {
   /* intentionally unchanged */
 }
 
