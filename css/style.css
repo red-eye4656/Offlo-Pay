@@ -10399,3 +10399,64 @@ a {
   }
 }
 
+
+/* =========================================================
+   OFFLO-PAY BRANDING — FINAL FIX
+   ========================================================= */
+
+/* Navbar: large readable logo */
+.offlopay-navbar-logo {
+  display: flex !important;
+  align-items: center !important;
+  width: 300px !important;
+  min-width: 300px !important;
+}
+
+.offlopay-navbar-logo .offlopay-logo-img {
+  width: 300px !important;
+  max-width: none !important;
+  height: auto !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+/* Phone/payment card: text only, no stretched image */
+.payment-ui .mini-logo {
+  width: auto !important;
+  min-width: 0 !important;
+  height: auto !important;
+  overflow: visible !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.payment-ui .mini-logo img {
+  display: none !important;
+}
+
+.payment-ui .mini-logo span {
+  display: block !important;
+  width: auto !important;
+  height: auto !important;
+  font-size: 17px !important;
+  font-weight: 750 !important;
+  line-height: 1 !important;
+  letter-spacing: -0.04em !important;
+  white-space: nowrap !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-navbar-logo {
+    width: 230px !important;
+    min-width: 230px !important;
+  }
+
+  .offlopay-navbar-logo .offlopay-logo-img {
+    width: 230px !important;
+  }
+
+  .payment-ui .mini-logo span {
+    font-size: 15px !important;
+  }
+}
+
