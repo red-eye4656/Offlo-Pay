@@ -10569,3 +10569,144 @@ a {
   }
 }
 
+
+/* =========================================================
+   OFFLO-PAY — TEAL / AQUA PREMIUM THEME
+   ========================================================= */
+
+:root {
+  --bg: #050B0F !important;
+  --card: #0B1418 !important;
+  --accent: #19E6C1 !important;
+  --accent-2: #22B8F0 !important;
+  --text: #FFFFFF !important;
+  --muted: #9AA8AD !important;
+}
+
+/* Main background */
+body {
+  background: #050B0F !important;
+  color: #FFFFFF !important;
+}
+
+/* Main sections */
+section,
+.navbar {
+  background-color: transparent;
+}
+
+/* Dark glass cards */
+.feature-card,
+.difference-box,
+.team-card,
+.network-card,
+.voice-card,
+.payment-ui {
+  background-color: #0B1418 !important;
+}
+
+/* Main gradient text */
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #22B8F0 0%,
+    #19E6C1 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* Primary buttons */
+.btn-primary,
+.nav-button {
+  background: linear-gradient(
+    90deg,
+    #22B8F0 0%,
+    #19E6C1 100%
+  ) !important;
+  color: #04120F !important;
+  border-color: transparent !important;
+}
+
+/* Button hover */
+.btn-primary:hover,
+.nav-button:hover {
+  box-shadow:
+    0 0 24px rgba(25, 230, 193, .28),
+    0 8px 30px rgba(34, 184, 240, .16) !important;
+}
+
+/* Teal highlights */
+.mini-label,
+.section-label,
+.feature-label {
+  color: #19E6C1 !important;
+}
+
+/* Links */
+.nav-links a:hover {
+  color: #19E6C1 !important;
+}
+
+/* Connectivity / status indicators */
+.connection i {
+  background: #19E6C1 !important;
+  box-shadow: 0 0 12px rgba(25, 230, 193, .55) !important;
+}
+
+/* Accent borders */
+.feature-card:hover,
+.difference-box:hover {
+  border-color: rgba(25, 230, 193, .28) !important;
+}
+
+/* Teal ambient glow */
+.ambient-glow {
+  background:
+    radial-gradient(
+      circle,
+      rgba(25, 230, 193, .14) 0%,
+      rgba(34, 184, 240, .07) 35%,
+      transparent 70%
+    ) !important;
+}
+
+/* Remove large purple glow */
+.hero-visual::after {
+  background: transparent !important;
+}
+
+/* Soft text */
+p,
+small {
+  color: #9AA8AD;
+}
+
+/* Keep headings white */
+h1,
+h2,
+h3,
+h4,
+strong {
+  color: #FFFFFF;
+}
+
+/* Teal selection */
+::selection {
+  background: #19E6C1 !important;
+  color: #04120F !important;
+}
+
+/* Mobile menu */
+.mobile-menu,
+.mobile-menu-panel {
+  background: #050B0F !important;
+}
+
+.mobile-menu a:hover,
+.mobile-menu-panel a:hover {
+  color: #19E6C1 !important;
+}
+
