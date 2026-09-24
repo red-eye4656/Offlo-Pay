@@ -10802,3 +10802,56 @@ h1 .gradient-text,
   box-shadow: none !important;
 }
 
+
+/* =========================================================
+   OFFLO-PAY — FINAL REMAINING COLOR FIXES
+   ========================================================= */
+
+/* 1. COMING SOON BUTTON — remove old blue/purple */
+.hero-actions .btn-primary,
+.hero-visual .btn-primary,
+a.btn-primary,
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    #22B8F0 0%,
+    #19E6C1 100%
+  ) !important;
+
+  color: #04120F !important;
+  border: none !important;
+  box-shadow: 0 8px 28px rgba(25,230,193,.16) !important;
+}
+
+/* 2. SHUBHAM AVATAR — teal/cyan */
+.payment-ui .transaction-icon.secondary {
+  background: rgba(25,230,193,.12) !important;
+  color: #19E6C1 !important;
+  border: 1px solid rgba(25,230,193,.28) !important;
+  box-shadow: none !important;
+}
+
+/* 3. NAVBAR LOGO — remove surrounding dark/glow patch */
+.navbar .offlopay-navbar-logo,
+.navbar .logo {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+.navbar .offlopay-navbar-logo .offlopay-logo-img,
+.navbar .logo img {
+  mix-blend-mode: screen !important;
+  background: transparent !important;
+  box-shadow: none !important;
+  filter: none !important;
+}
+
+/* Keep Xoro AI purple accent intentionally */
+.xoro-ai,
+.xoro-ai *,
+.xoro-badge {
+  /* intentionally unchanged */
+}
+
