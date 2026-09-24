@@ -10333,3 +10333,44 @@ a {
   box-shadow: 0 8px 30px rgba(0,0,0,.25), inset 0 1px 0 rgba(255,255,255,.12) !important;
 }
 
+
+/* FIX: Offlo-Pay logo images */
+.offlopay-logo-img {
+  width: 300px !important;
+  height: auto !important;
+  max-width: none !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+.payment-ui .mini-logo {
+  width: 150px !important;
+  height: 34px !important;
+  overflow: hidden !important;
+  display: flex !important;
+  align-items: center !important;
+}
+
+.payment-ui .mini-logo img {
+  width: 150px !important;
+  height: auto !important;
+  max-width: none !important;
+  display: block !important;
+  object-fit: contain !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-logo-img {
+    width: 230px !important;
+  }
+
+  .payment-ui .mini-logo {
+    width: 125px !important;
+    height: 30px !important;
+  }
+
+  .payment-ui .mini-logo img {
+    width: 125px !important;
+  }
+}
+
