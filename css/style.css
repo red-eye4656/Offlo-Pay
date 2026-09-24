@@ -10710,3 +10710,95 @@ strong {
   color: #19E6C1 !important;
 }
 
+
+/* =========================================================
+   OFFLO-PAY — REMOVE REMAINING BLUE/PURPLE
+   ========================================================= */
+
+/* CONNECTIVITY HEADLINE */
+h1 span,
+h1 .gradient-text,
+.hero-title span,
+.hero-copy h1 span,
+.gradient-text {
+  background: linear-gradient(
+    90deg,
+    #22B8F0 0%,
+    #19E6C1 100%
+  ) !important;
+  -webkit-background-clip: text !important;
+  background-clip: text !important;
+  -webkit-text-fill-color: transparent !important;
+  color: transparent !important;
+}
+
+/* COMING SOON BUTTON */
+.hero-actions .btn-primary,
+.hero .btn-primary,
+.btn-primary {
+  background: linear-gradient(
+    90deg,
+    #22B8F0 0%,
+    #19E6C1 100%
+  ) !important;
+  background-color: #19E6C1 !important;
+  color: #04120F !important;
+  border-color: transparent !important;
+}
+
+/* PHONE CARD WORDMARK */
+.payment-ui .mini-logo span {
+  background: none !important;
+  -webkit-text-fill-color: #FFFFFF !important;
+  color: #FFFFFF !important;
+}
+
+/* PHONE CARD ACTIONS */
+.payment-ui .pay-action {
+  background: rgba(255,255,255,.035) !important;
+  color: #FFFFFF !important;
+  border-color: rgba(255,255,255,.08) !important;
+}
+
+.payment-ui .pay-action.active,
+.payment-ui .pay-action.demo-active {
+  background: rgba(25,230,193,.12) !important;
+  color: #19E6C1 !important;
+  border-color: rgba(25,230,193,.45) !important;
+  box-shadow: 0 0 18px rgba(25,230,193,.12) !important;
+}
+
+/* ANSHIK AVATAR */
+.payment-ui .transaction-icon {
+  background: rgba(25,230,193,.14) !important;
+  color: #19E6C1 !important;
+  border-color: rgba(25,230,193,.28) !important;
+  box-shadow: none !important;
+}
+
+.payment-ui .transaction-icon.secondary {
+  background: rgba(34,184,240,.12) !important;
+  color: #22B8F0 !important;
+  border-color: rgba(34,184,240,.25) !important;
+}
+
+/* NAVBAR LOGO */
+.navbar .offlopay-logo-img,
+.navbar .logo img {
+  mix-blend-mode: screen !important;
+}
+
+/* Remove logo container effects */
+.navbar .offlopay-navbar-logo {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+/* Kill old purple/blue ambient overlays around payment UI */
+.payment-ui::before,
+.payment-ui::after {
+  background: transparent !important;
+  box-shadow: none !important;
+}
+
