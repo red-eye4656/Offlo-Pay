@@ -10141,3 +10141,18 @@ a {
     width: 118px;
   }
 }
+
+/* OFFLO-PAY — larger premium navbar logo */
+.offlopay-logo-img {
+  width: 190px !important;
+  max-width: 190px !important;
+  height: auto !important;
+  display: block !important;
+}
+
+@media (max-width: 650px) {
+  .offlopay-logo-img {
+    width: 155px !important;
+    max-width: 155px !important;
+  }
+}
