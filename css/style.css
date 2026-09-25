@@ -11506,3 +11506,13 @@ a.btn-primary,
   }
 }
 
+
+html,
+body {
+  overflow-x: auto !important;
+}
+
+body {
+  min-width: 100%;
+}
+
