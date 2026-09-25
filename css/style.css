@@ -5641,7 +5641,7 @@ svg {
 }
 
 
-/* Responsive hero badges */
+
 @media (max-width: 900px) {
   .hero-visual::before {
     left: 50% !important;
@@ -5686,7 +5686,7 @@ svg {
 }
 
 
-/* Offlo-Pay navbar logo */
+
 .offlopay-logo {
   display: inline-flex !important;
   align-items: center;
@@ -5724,10 +5724,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — RESPONSIVE HERO FIX
-   Prevent floating UI cards from colliding on narrow screens
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -5747,7 +5744,7 @@ header .offlopay-logo-name {
     display: block !important;
   }
 
-  /* Main payment UI */
+  
   .hero-visual .payment-ui {
     position: absolute !important;
     width: min(390px, 78vw) !important;
@@ -5759,7 +5756,7 @@ header .offlopay-logo-name {
     z-index: 10 !important;
   }
 
-  /* Offline Ready — completely separated from payment card */
+  
   .hero-visual::before {
     left: 50% !important;
     right: auto !important;
@@ -5778,7 +5775,7 @@ header .offlopay-logo-name {
     z-index: 31 !important;
   }
 
-  /* Payment network card */
+  
   .hero-visual .network-card {
     top: 88px !important;
     right: max(4vw, 12px) !important;
@@ -5788,7 +5785,7 @@ header .offlopay-logo-name {
     z-index: 25 !important;
   }
 
-  /* Voice command */
+  
   .hero-visual .voice-card {
     right: max(4vw, 12px) !important;
     left: auto !important;
@@ -5808,7 +5805,7 @@ header .offlopay-logo-name {
 }
 
 
-/* Smaller phones */
+
 @media (max-width: 600px) {
 
   .hero-visual {
@@ -5844,7 +5841,7 @@ header .offlopay-logo-name {
 }
 
 
-/* Very narrow phones */
+
 @media (max-width: 430px) {
 
   .hero-visual {
@@ -5856,7 +5853,7 @@ header .offlopay-logo-name {
     top: 75px !important;
   }
 
-  /* Keep the network card away from the main card */
+  
   .hero-visual .network-card {
     top: 58px !important;
     right: 1vw !important;
@@ -5880,9 +5877,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — FINAL MOBILE HERO LAYOUT
-   ========================================================= */
+
 
 @media (max-width: 650px) {
 
@@ -5895,7 +5890,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* Visual comes first */
+  
   .hero-visual {
     order: -1 !important;
     width: 100% !important;
@@ -5910,7 +5905,7 @@ header .offlopay-logo-name {
     right: auto !important;
   }
 
-  /* Main payment card */
+  
   .hero-visual .payment-ui {
     position: absolute !important;
     width: calc(100vw - 34px) !important;
@@ -5926,7 +5921,7 @@ header .offlopay-logo-name {
     z-index: 10 !important;
   }
 
-  /* Offline Ready badge */
+  
   .hero-visual::before {
     left: 18px !important;
     top: 18px !important;
@@ -5945,7 +5940,7 @@ header .offlopay-logo-name {
     z-index: 41 !important;
   }
 
-  /* Ready for fallback */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -5964,7 +5959,7 @@ header .offlopay-logo-name {
     z-index: 35 !important;
   }
 
-  /* Voice command — bottom right, NOT over the top */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -5983,7 +5978,7 @@ header .offlopay-logo-name {
     z-index: 35 !important;
   }
 
-  /* Hero text */
+  
   .hero-content {
     order: 2 !important;
     width: 100% !important;
@@ -6019,7 +6014,7 @@ header .offlopay-logo-name {
   }
 }
 
-/* Extra-small phones */
+
 @media (max-width: 430px) {
 
   .hero {
@@ -6063,10 +6058,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — CLEAN MOBILE HERO
-   Final override: mobile only
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -6079,7 +6071,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* Text below the payment UI */
+  
   .hero-content {
     order: 2 !important;
     width: 100% !important;
@@ -6087,7 +6079,7 @@ header .offlopay-logo-name {
     margin: 0 auto !important;
   }
 
-  /* Payment visual area */
+  
   .hero-visual {
     order: 1 !important;
     position: relative !important;
@@ -6109,7 +6101,7 @@ header .offlopay-logo-name {
     transform: none !important;
   }
 
-  /* MAIN PAYMENT CARD */
+  
   .hero-visual .payment-ui {
     position: absolute !important;
 
@@ -6127,7 +6119,7 @@ header .offlopay-logo-name {
     z-index: 10 !important;
   }
 
-  /* OFFLINE READY */
+  
   .hero-visual::before {
     content: "↯  OFFLINE READY" !important;
 
@@ -6156,7 +6148,7 @@ header .offlopay-logo-name {
     z-index: 51 !important;
   }
 
-  /* READY FOR FALLBACK */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -6179,7 +6171,7 @@ header .offlopay-logo-name {
     animation: none !important;
   }
 
-  /* VOICE COMMAND */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -6199,14 +6191,14 @@ header .offlopay-logo-name {
     z-index: 45 !important;
   }
 
-  /* Prevent generic mobile rules from stretching cards */
+  
   .hero-visual > .network-card,
   .hero-visual > .voice-card,
   .hero-visual > .payment-ui {
     box-sizing: border-box !important;
   }
 
-  /* Better mobile heading */
+  
   .hero h1 {
     font-size: clamp(46px, 13vw, 68px) !important;
     line-height: .91 !important;
@@ -6222,7 +6214,7 @@ header .offlopay-logo-name {
 }
 
 
-/* SMALL PHONES */
+
 
 @media (max-width: 500px) {
 
@@ -6275,7 +6267,7 @@ header .offlopay-logo-name {
 }
 
 
-/* VERY SMALL PHONES */
+
 
 @media (max-width: 380px) {
 
@@ -6304,9 +6296,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY FINAL MOBILE LAYOUT
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -6333,7 +6323,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* MAIN PAYMENT CARD */
+  
   .hero-visual .payment-ui {
     position: absolute !important;
     top: 85px !important;
@@ -6349,7 +6339,7 @@ header .offlopay-logo-name {
     z-index: 10 !important;
   }
 
-  /* OFFLINE READY */
+  
   .hero-visual::before {
     content: "↯  OFFLINE READY" !important;
 
@@ -6374,7 +6364,7 @@ header .offlopay-logo-name {
     z-index: 101 !important;
   }
 
-  /* FALLBACK CARD */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -6389,7 +6379,7 @@ header .offlopay-logo-name {
     z-index: 90 !important;
   }
 
-  /* VOICE CARD */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -6415,7 +6405,7 @@ header .offlopay-logo-name {
 }
 
 
-/* PHONE */
+
 @media (max-width: 600px) {
 
   .hero {
@@ -6466,7 +6456,7 @@ header .offlopay-logo-name {
 }
 
 
-/* VERY SMALL PHONE */
+
 @media (max-width: 380px) {
 
   .hero-visual {
@@ -6491,9 +6481,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — FINAL MOBILE HERO FIX
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -6520,7 +6508,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* MAIN PAYMENT CARD */
+  
   .hero-visual .payment-ui {
     position: absolute !important;
     top: 72px !important;
@@ -6536,7 +6524,7 @@ header .offlopay-logo-name {
     z-index: 20 !important;
   }
 
-  /* OFFLINE READY — keep it attached to card */
+  
   .hero-visual::before {
     content: "↯  OFFLINE READY" !important;
 
@@ -6563,7 +6551,7 @@ header .offlopay-logo-name {
     z-index: 31 !important;
   }
 
-  /* READY FOR FALLBACK */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -6577,7 +6565,7 @@ header .offlopay-logo-name {
     z-index: 40 !important;
   }
 
-  /* VOICE COMMAND */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -6592,7 +6580,7 @@ header .offlopay-logo-name {
     z-index: 40 !important;
   }
 
-  /* HERO TEXT */
+  
   .hero-content {
     order: 2 !important;
     width: 100% !important;
@@ -6608,9 +6596,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   SMALL PHONE
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -6658,9 +6644,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   VERY SMALL PHONE
-   ========================================================= */
+
 
 @media (max-width: 380px) {
 
@@ -6691,9 +6675,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — CLEAN RESPONSIVE HERO
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -6733,7 +6715,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* MAIN PAYMENT UI */
+  
   .hero-visual .payment-ui {
     position: absolute !important;
 
@@ -6751,7 +6733,7 @@ header .offlopay-logo-name {
     z-index: 10 !important;
   }
 
-  /* OFFLINE READY */
+  
   .hero-visual::before {
     content: "↯  OFFLINE READY" !important;
 
@@ -6781,7 +6763,7 @@ header .offlopay-logo-name {
     z-index: 31 !important;
   }
 
-  /* FALLBACK */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -6797,7 +6779,7 @@ header .offlopay-logo-name {
     z-index: 25 !important;
   }
 
-  /* VOICE */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -6815,9 +6797,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   PHONE
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -6872,9 +6852,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
+
 
 @media (max-width: 380px) {
 
@@ -6909,9 +6887,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — FINAL MOBILE SAFE LAYOUT
-   ========================================================= */
+
 
 @media screen and (max-width: 900px) {
 
@@ -6936,7 +6912,7 @@ header .offlopay-logo-name {
     overflow: hidden !important;
   }
 
-  /* Visual area */
+  
   .hero-visual {
     order: 1 !important;
 
@@ -6960,7 +6936,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* Main payment card */
+  
   .hero-visual .payment-ui {
     position: absolute !important;
 
@@ -6979,7 +6955,7 @@ header .offlopay-logo-name {
     z-index: 10 !important;
   }
 
-  /* Offline badge */
+  
   .hero-visual::before {
     content: "↯  OFFLINE READY" !important;
 
@@ -7008,7 +6984,7 @@ header .offlopay-logo-name {
     display: none !important;
   }
 
-  /* Fallback status */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -7024,7 +7000,7 @@ header .offlopay-logo-name {
     z-index: 40 !important;
   }
 
-  /* Voice command */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -7040,7 +7016,7 @@ header .offlopay-logo-name {
     z-index: 40 !important;
   }
 
-  /* Text comes after visual */
+  
   .hero-content {
     order: 2 !important;
 
@@ -7056,9 +7032,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   NORMAL PHONES
-   ========================================================= */
+
 
 @media screen and (max-width: 600px) {
 
@@ -7109,9 +7083,7 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   SMALL PHONES — 320/360px
-   ========================================================= */
+
 
 @media screen and (max-width: 380px) {
 
@@ -7151,13 +7123,11 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — MOBILE TOUCH POLISH
-   ========================================================= */
+
 
 @media (hover: none) and (pointer: coarse) {
 
-  /* Remove browser tap highlight */
+  
   *,
   *::before,
   *::after {
@@ -7165,7 +7135,7 @@ header .offlopay-logo-name {
     tap-highlight-color: transparent !important;
   }
 
-  /* Remove unwanted focus outline on touch */
+  
   a,
   button,
   input,
@@ -7174,14 +7144,14 @@ header .offlopay-logo-name {
     -webkit-tap-highlight-color: transparent !important;
   }
 
-  /* Keep keyboard accessibility */
+  
   a:focus-visible,
   button:focus-visible {
     outline: 2px solid rgba(37, 231, 173, .65) !important;
     outline-offset: 3px !important;
   }
 
-  /* Smoother touch interaction */
+  
   a,
   button,
   .pay-action,
@@ -7207,13 +7177,11 @@ header .offlopay-logo-name {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — MOBILE POLISH / NO OVERLAP
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
-  /* Remove browser tap highlight on mobile */
+  
   * {
     -webkit-tap-highlight-color: transparent;
   }
@@ -7229,7 +7197,7 @@ header .offlopay-logo-name {
     touch-action: manipulation;
   }
 
-  /* Navbar */
+  
   .navbar {
     padding: 18px 20px !important;
     min-height: 72px !important;
@@ -7240,7 +7208,7 @@ header .offlopay-logo-name {
     font-size: 20px !important;
   }
 
-  /* HERO */
+  
   .hero {
     display: flex !important;
     flex-direction: column !important;
@@ -7249,7 +7217,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* PAYMENT VISUAL */
+  
   .hero-visual {
     order: 1 !important;
 
@@ -7270,7 +7238,7 @@ header .offlopay-logo-name {
     overflow: visible !important;
   }
 
-  /* MAIN PAYMENT CARD */
+  
   .hero-visual .payment-ui {
     position: relative !important;
 
@@ -7291,7 +7259,7 @@ header .offlopay-logo-name {
     box-sizing: border-box !important;
   }
 
-  /* OFFLINE READY — keep outside card */
+  
   .hero-visual::before {
     content: "↯  OFFLINE READY" !important;
 
@@ -7317,7 +7285,7 @@ header .offlopay-logo-name {
     display: none !important;
   }
 
-  /* READY FOR FALLBACK */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -7334,7 +7302,7 @@ header .offlopay-logo-name {
     z-index: 25 !important;
   }
 
-  /* VOICE COMMAND */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -7352,12 +7320,12 @@ header .offlopay-logo-name {
     z-index: 25 !important;
   }
 
-  /* Keep voice card away from transaction rows */
+  
   .hero-visual .payment-ui {
     overflow: visible !important;
   }
 
-  /* HERO TEXT AFTER CARD */
+  
   .hero-content {
     order: 2 !important;
 
@@ -7388,7 +7356,7 @@ header .offlopay-logo-name {
     max-width: 100% !important;
   }
 
-  /* Prevent buttons from causing horizontal overflow */
+  
   .hero-buttons {
     width: 100% !important;
     display: flex !important;
@@ -7400,7 +7368,7 @@ header .offlopay-logo-name {
     max-width: 100% !important;
   }
 
-  /* PAYMENT CARD INTERNAL SPACING */
+  
   .payment-ui .payment-top {
     margin-bottom: 30px !important;
   }
@@ -7426,7 +7394,7 @@ header .offlopay-logo-name {
 }
 
 
-/* SMALL PHONES */
+
 @media (max-width: 380px) {
 
   .hero {
@@ -7471,9 +7439,7 @@ header .offlopay-logo-name {
 
 
 
-/* =========================================================
-   OFFLO-PAY — FINAL RESPONSIVE MOBILE POLISH
-   ========================================================= */
+
 
 *,
 *::before,
@@ -7490,7 +7456,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Prevent ugly mobile browser tap flash */
+
 a,
 button,
 input,
@@ -7502,16 +7468,14 @@ select,
   -webkit-tap-highlight-color: transparent;
 }
 
-/* Better touch behaviour */
+
 a,
 button {
   touch-action: manipulation;
 }
 
 
-/* =========================
-   TABLET + PHONE
-   ========================= */
+
 
 @media (max-width: 900px) {
 
@@ -7543,7 +7507,7 @@ button {
     overflow: visible !important;
   }
 
-  /* Main payment card */
+  
   .hero-visual .payment-ui {
     position: relative !important;
 
@@ -7562,7 +7526,7 @@ button {
     z-index: 10 !important;
   }
 
-  /* Offline badge */
+  
   .hero-visual::before {
     content: "↯  OFFLINE READY" !important;
 
@@ -7588,7 +7552,7 @@ button {
     display: none !important;
   }
 
-  /* Fallback card */
+  
   .hero-visual .network-card {
     position: absolute !important;
 
@@ -7605,7 +7569,7 @@ button {
     z-index: 30 !important;
   }
 
-  /* Voice card */
+  
   .hero-visual .voice-card {
     position: absolute !important;
 
@@ -7623,7 +7587,7 @@ button {
     z-index: 30 !important;
   }
 
-  /* Hero text comes after visual */
+  
   .hero-content {
     order: 2 !important;
 
@@ -7646,9 +7610,7 @@ button {
 }
 
 
-/* =========================
-   PHONE
-   ========================= */
+
 
 @media (max-width: 600px) {
 
@@ -7667,7 +7629,7 @@ button {
     margin-bottom: 52px !important;
   }
 
-  /* Main card */
+  
   .hero-visual .payment-ui {
     width: 100% !important;
     max-width: 100% !important;
@@ -7680,14 +7642,14 @@ button {
     border-radius: 28px !important;
   }
 
-  /* Keep balance inside card */
+  
   .payment-ui .balance {
     font-size: clamp(40px, 11vw, 56px) !important;
     line-height: 1 !important;
     white-space: nowrap !important;
   }
 
-  /* Three payment buttons */
+  
   .payment-ui .payment-actions {
     display: flex !important;
     width: 100% !important;
@@ -7700,7 +7662,7 @@ button {
     min-height: 82px !important;
   }
 
-  /* Transaction rows */
+  
   .payment-ui .transaction {
     min-width: 0 !important;
   }
@@ -7722,7 +7684,7 @@ button {
     flex-shrink: 0 !important;
   }
 
-  /* Fallback */
+  
   .hero-visual .network-card {
     top: 0 !important;
     right: 0 !important;
@@ -7733,7 +7695,7 @@ button {
     transform-origin: right top !important;
   }
 
-  /* Voice */
+  
   .hero-visual .voice-card {
     right: 0 !important;
     bottom: -35px !important;
@@ -7744,7 +7706,7 @@ button {
     transform-origin: right bottom !important;
   }
 
-  /* Hero text */
+  
   .hero-content {
     width: 100% !important;
   }
@@ -7772,13 +7734,13 @@ button {
     min-height: 46px !important;
   }
 
-  /* Mobile sections */
+  
   .section {
     padding-left: 16px !important;
     padding-right: 16px !important;
   }
 
-  /* Cards shouldn't overflow viewport */
+  
   .feature-card,
   .ovi-card,
   .team-card {
@@ -7788,9 +7750,7 @@ button {
 }
 
 
-/* =========================
-   SMALL PHONE
-   ========================= */
+
 
 @media (max-width: 380px) {
 
@@ -7843,9 +7803,7 @@ button {
 }
 
 
-/* =========================
-   VERY SMALL PHONE
-   ========================= */
+
 
 @media (max-width: 340px) {
 
@@ -7874,9 +7832,7 @@ button {
 }
 
 
-/* =========================
-   ACCESSIBILITY
-   ========================= */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -7893,9 +7849,7 @@ button {
 
 
 
-/* =========================================================
-   OFFLO-PAY — MOBILE UX POLISH v2
-   ========================================================= */
+
 
 html {
   scroll-behavior: smooth;
@@ -7905,7 +7859,7 @@ body {
   overscroll-behavior-x: none;
 }
 
-/* Prevent accidental selection on interactive UI */
+
 .navbar,
 .hero-buttons,
 .payment-actions,
@@ -7918,9 +7872,7 @@ body {
 }
 
 
-/* =========================
-   MOBILE NAVBAR
-   ========================= */
+
 
 @media (max-width: 900px) {
 
@@ -7943,9 +7895,7 @@ body {
 }
 
 
-/* =========================
-   TOUCH FEEDBACK
-   ========================= */
+
 
 @media (hover: none) and (pointer: coarse) {
 
@@ -7975,9 +7925,7 @@ body {
 }
 
 
-/* =========================
-   PAYMENT ACTIONS
-   ========================= */
+
 
 @media (max-width: 600px) {
 
@@ -8011,7 +7959,7 @@ body {
   }
 
 
-  /* Recent activity */
+  
   .payment-ui .recent-header {
     display: flex !important;
     align-items: center !important;
@@ -8021,7 +7969,7 @@ body {
   }
 
 
-  /* Don't let decorative voice card cover transactions */
+  
   .hero-visual .voice-card {
     pointer-events: none !important;
   }
@@ -8031,7 +7979,7 @@ body {
   }
 
 
-  /* Hero buttons */
+  
   .hero-buttons {
     display: grid !important;
     grid-template-columns: 1fr 1fr !important;
@@ -8052,9 +8000,7 @@ body {
 }
 
 
-/* =========================
-   VERY SMALL PHONE
-   ========================= */
+
 
 @media (max-width: 380px) {
 
@@ -8073,9 +8019,7 @@ body {
 }
 
 
-/* =========================
-   FOOTER MOBILE
-   ========================= */
+
 
 @media (max-width: 600px) {
 
@@ -8103,9 +8047,7 @@ body {
 }
 
 
-/* =========================
-   MOBILE SECTION SPACING
-   ========================= */
+
 
 @media (max-width: 600px) {
 
@@ -8134,9 +8076,7 @@ body {
 }
 
 
-/* =========================
-   NO HORIZONTAL LEAK
-   ========================= */
+
 
 @media (max-width: 600px) {
 
@@ -8156,9 +8096,7 @@ body {
 }
 
 
-/* =========================
-   REDUCE MOTION
-   ========================= */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -8170,9 +8108,7 @@ body {
 
 
 
-/* =========================================================
-   OFFLO-PAY — PRODUCT DEMO MICRO INTERACTIONS
-   ========================================================= */
+
 
 .payment-ui {
   will-change: transform;
@@ -8224,7 +8160,7 @@ body {
 }
 
 
-/* Connection indicator */
+
 
 .payment-ui .connection {
   transition:
@@ -8252,7 +8188,7 @@ body {
 }
 
 
-/* Floating cards */
+
 
 .hero-visual .network-card {
   animation: offloFloatNetwork 5s ease-in-out infinite;
@@ -8289,7 +8225,7 @@ body {
 }
 
 
-/* Hero entrance */
+
 
 .hero-visual .payment-ui {
   animation: offloCardEnter .75s cubic-bezier(.2,.8,.2,1) both;
@@ -8310,7 +8246,7 @@ body {
 }
 
 
-/* Don't animate on reduced motion */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -8324,7 +8260,7 @@ body {
 }
 
 
-/* Mobile: keep everything subtle */
+
 
 @media (max-width: 600px) {
 
@@ -8340,9 +8276,7 @@ body {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — MOBILE NAVIGATION POLISH
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -8356,14 +8290,14 @@ body {
     padding-right: 16px !important;
   }
 
-  /* Make all tap targets comfortable */
+  
   a,
   button {
     -webkit-tap-highlight-color: transparent !important;
     tap-highlight-color: transparent !important;
   }
 
-  /* Remove ugly mobile blue tap highlight */
+  
   * {
     -webkit-tap-highlight-color: transparent;
   }
@@ -8371,9 +8305,7 @@ body {
 }
 
 
-/* =========================================================
-   MOBILE HERO
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -8405,9 +8337,7 @@ body {
 }
 
 
-/* =========================================================
-   MOBILE CARDS — CLEAN STACK
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -8426,9 +8356,7 @@ body {
 }
 
 
-/* =========================================================
-   MOBILE TEAM
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -8445,9 +8373,7 @@ body {
 }
 
 
-/* =========================================================
-   MOBILE FOOTER
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -8464,9 +8390,7 @@ body {
 }
 
 
-/* =========================================================
-   SAFE AREA FOR MODERN PHONES
-   ========================================================= */
+
 
 @supports (padding: env(safe-area-inset-bottom)) {
 
@@ -8478,9 +8402,7 @@ body {
 }
 
 
-/* =========================================================
-   NO HORIZONTAL SCROLL
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -8501,10 +8423,7 @@ body {
 
 
 
-/* =========================================================
-   OFFLO-PAY — RESPONSIVE PAYMENT MOCKUP v3
-   320px → 430px PHONES
-   ========================================================= */
+
 
 @media (max-width: 600px) {
 
@@ -8521,9 +8440,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     MAIN PAYMENT CARD
-     ----------------------------------------- */
+  
 
   .hero-visual .payment-ui {
 
@@ -8550,9 +8467,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     PAYMENT TOP
-     ----------------------------------------- */
+  
 
   .payment-ui .payment-top {
 
@@ -8579,9 +8494,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     BALANCE
-     ----------------------------------------- */
+  
 
   .payment-ui .balance {
 
@@ -8593,9 +8506,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     ACTION BUTTONS
-     ----------------------------------------- */
+  
 
   .payment-ui .payment-actions {
 
@@ -8636,9 +8547,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     TRANSACTIONS
-     ----------------------------------------- */
+  
 
   .payment-ui .transaction {
 
@@ -8681,9 +8590,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     OFFLINE READY BADGE
-     ----------------------------------------- */
+  
 
   .hero-visual::before {
 
@@ -8717,9 +8624,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     FALLBACK CARD
-     ----------------------------------------- */
+  
 
   .hero-visual .network-card {
 
@@ -8743,9 +8648,7 @@ body {
   }
 
 
-  /* -----------------------------------------
-     VOICE CARD
-     ----------------------------------------- */
+  
 
   .hero-visual .voice-card {
 
@@ -8772,9 +8675,7 @@ body {
 }
 
 
-/* =========================================================
-   SMALL PHONES
-   ========================================================= */
+
 
 @media (max-width: 380px) {
 
@@ -8844,9 +8745,7 @@ body {
 }
 
 
-/* =========================================================
-   EXTRA SMALL — 320px
-   ========================================================= */
+
 
 @media (max-width: 340px) {
 
@@ -8900,9 +8799,7 @@ body {
 }
 
 
-/* =========================================================
-   TOUCH DEVICES — REMOVE HOVER DISTORTION
-   ========================================================= */
+
 
 @media (hover: none) and (pointer: coarse) {
 
@@ -8922,9 +8819,7 @@ body {
 
 
 
-/* =========================================================
-   OFFLO-PAY — PREMIUM MOBILE MENU
-   ========================================================= */
+
 
 .mobile-menu-toggle {
   display: none;
@@ -9099,10 +8994,7 @@ body {
 
 
 
-/* =========================================================
-   OFFLO-PAY — FINAL MOBILE HERO LAYOUT
-   No overlap / clean hierarchy
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -9130,8 +9022,7 @@ body {
   }
 
 
-  /* Hide decorative pseudo badges on mobile.
-     The actual cards remain visible. */
+  
 
   .hero-visual::before,
   .hero-visual::after {
@@ -9139,7 +9030,7 @@ body {
   }
 
 
-  /* Main payment UI */
+  
 
   .hero-visual .payment-ui {
 
@@ -9165,7 +9056,7 @@ body {
   }
 
 
-  /* Fallback card */
+  
 
   .hero-visual .network-card {
 
@@ -9191,7 +9082,7 @@ body {
   }
 
 
-  /* Voice card */
+  
 
   .hero-visual .voice-card {
 
@@ -9217,7 +9108,7 @@ body {
   }
 
 
-  /* Remove old absolute positioning */
+  
 
   .hero-visual .offline-card,
   .hero-visual .offline-ready,
@@ -9234,7 +9125,7 @@ body {
   }
 
 
-  /* Keep hero content below visual */
+  
 
   .hero-content {
 
@@ -9333,7 +9224,7 @@ body {
 }
 
 
-/* Prevent ugly mobile tap highlight */
+
 
 @media (max-width: 900px) {
 
@@ -9350,9 +9241,7 @@ body {
 
 
 
-/* =========================================================
-   OFFLO-PAY — MOBILE HERO TYPOGRAPHY POLISH
-   ========================================================= */
+
 
 @media (max-width: 900px) {
 
@@ -9493,9 +9382,7 @@ body {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — PREMIUM CONTACT EMAIL INTERACTION
-   ========================================================= */
+
 
 .contact-email {
   position: relative !important;
@@ -9534,7 +9421,7 @@ body {
 }
 
 
-/* moving light */
+
 
 .contact-email::before {
   content: "";
@@ -9563,7 +9450,7 @@ body {
 }
 
 
-/* subtle blue glow */
+
 
 .contact-email::after {
   content: "";
@@ -9590,7 +9477,7 @@ body {
 }
 
 
-/* email text */
+
 
 .contact-email span {
   position: relative;
@@ -9603,7 +9490,7 @@ body {
 }
 
 
-/* arrow */
+
 
 .contact-email b {
   position: relative;
@@ -9622,7 +9509,7 @@ body {
 }
 
 
-/* desktop interaction */
+
 
 @media (hover: hover) {
 
@@ -9671,7 +9558,7 @@ body {
 }
 
 
-/* mobile tap interaction */
+
 
 @media (max-width: 900px) {
 
@@ -9707,7 +9594,7 @@ body {
 }
 
 
-/* accessibility */
+
 
 @media (prefers-reduced-motion: reduce) {
 
@@ -9724,10 +9611,7 @@ body {
 
 
 
-/* =========================================================
-   OFFLO-PAY — PAYMENT CARD CONTINUOUS MOTION
-   Works on touch devices without relying on :hover
-   ========================================================= */
+
 
 @keyframes offloPaymentFloat {
   0%, 100% {
@@ -9762,7 +9646,7 @@ body {
 
 
 
-/* OFFLINE READY — use real HTML badge */
+
 .hero-visual::before {
   content: none !important;
   display: none !important;
@@ -9774,7 +9658,7 @@ body {
 }
 
 
-/* Independent offline badge */
+
 .hero-visual .offline-ready-badge {
   position: absolute !important;
 
@@ -9820,7 +9704,7 @@ body {
 }
 
 
-/* PHONE */
+
 @media (max-width: 650px) {
 
   .hero-visual .offline-ready-badge {
@@ -9838,7 +9722,7 @@ body {
 }
 
 
-/* VERY SMALL PHONE */
+
 @media (max-width: 380px) {
 
   .hero-visual .offline-ready-badge {
@@ -9872,13 +9756,13 @@ body {
   }
 }
 
-/* OFFLO-PAY: disable legacy pseudo badge */
+
 .hero-visual::before {
   content: none !important;
   display: none !important;
 }
 
-/* Independent OFFLINE READY badge */
+
 .hero-visual .offline-ready-badge {
   position: absolute !important;
   top: -38px !important;
@@ -9912,12 +9796,9 @@ body {
   }
 }
 
-/* =========================================================
-   OFFLO-PAY — PREMIUM MICRO INTERACTIONS
-   Does not modify payment card floating animation
-   ========================================================= */
 
-/* Logo breathing glow */
+
+
 .offlopay-navbar-logo {
   transition:
     transform .35s cubic-bezier(.2,.8,.2,1),
@@ -9932,7 +9813,7 @@ body {
 }
 
 
-/* Navbar contact button */
+
 .nav-button {
   position: relative;
   overflow: hidden;
@@ -9968,7 +9849,7 @@ body {
 }
 
 
-/* Feature card premium hover */
+
 .feature-card {
   transition:
     transform .4s cubic-bezier(.2,.8,.2,1),
@@ -9984,7 +9865,7 @@ body {
 }
 
 
-/* Team card hover */
+
 .team-card {
   transition:
     transform .4s cubic-bezier(.2,.8,.2,1),
@@ -9997,7 +9878,7 @@ body {
 }
 
 
-/* Contact email interaction */
+
 .contact-email,
 .footer-contact {
   transition:
@@ -10011,7 +9892,7 @@ body {
 }
 
 
-/* Small green status indicators */
+
 .connection i,
 .contact-dot {
   animation:
@@ -10033,7 +9914,7 @@ body {
 }
 
 
-/* Smooth buttons */
+
 button,
 a {
   -webkit-tap-highlight-color: transparent;
@@ -10047,7 +9928,7 @@ a {
 }
 
 
-/* Touch devices: keep things calm */
+
 @media (hover: none) and (pointer: coarse) {
 
   .nav-button:hover,
@@ -10061,7 +9942,7 @@ a {
 }
 
 
-/* Accessibility */
+
 @media (prefers-reduced-motion: reduce) {
 
   .offlopay-navbar-logo,
@@ -10078,7 +9959,7 @@ a {
 
 }
 
-/* Premium Offlo-Pay logo */
+
 .offlopay-logo-img {
   width: 125px;
   height: auto;
@@ -10117,9 +9998,7 @@ a {
   }
 }
 
-/* =========================================================
-   OFFLO-PAY PREMIUM BRAND LOGO
-   ========================================================= */
+
 
 .offlopay-logo-img {
   width: 142px;
@@ -10142,7 +10021,7 @@ a {
   }
 }
 
-/* OFFLO-PAY — larger premium navbar logo */
+
 .offlopay-logo-img {
   width: 190px !important;
   max-width: 190px !important;
@@ -10157,7 +10036,7 @@ a {
   }
 }
 
-/* Premium Offlo-Pay Logo */
+
 .offlopay-logo-img {
   width: 165px !important;
   height: auto !important;
@@ -10205,7 +10084,7 @@ a {
 }
 
 
-/* OFFLO-PAY LOGO — BIG & CLEAR */
+
 .offlopay-navbar-logo {
   display: flex !important;
   align-items: center !important;
@@ -10233,7 +10112,7 @@ a {
 }
 
 
-/* OFFLO-PAY LOGO — EXTRA LARGE */
+
 .offlopay-navbar-logo {
   width: 300px !important;
   min-width: 300px !important;
@@ -10256,7 +10135,7 @@ a {
 }
 
 
-/* Payment card — use the same Offlo-Pay branding */
+
 .payment-ui .mini-logo {
   display: flex !important;
   align-items: center !important;
@@ -10286,7 +10165,7 @@ a {
 }
 
 
-/* THE OFFLO-PAY IDEA — branded logo */
+
 .difference-icon.offlopay-idea-logo {
   display: flex !important;
   align-items: center !important;
@@ -10310,7 +10189,7 @@ a {
 }
 
 
-/* Offlo-Pay Idea — compact premium brand mark */
+
 .difference-icon.offlopay-idea-logo {
   display: flex !important;
   align-items: center !important;
@@ -10334,7 +10213,7 @@ a {
 }
 
 
-/* FIX: Offlo-Pay logo images */
+
 .offlopay-logo-img {
   width: 300px !important;
   height: auto !important;
@@ -10375,7 +10254,7 @@ a {
 }
 
 
-/* Payment card — Offlo-Pay wordmark */
+
 .payment-ui .mini-logo {
   width: auto !important;
   height: auto !important;
@@ -10400,11 +10279,9 @@ a {
 }
 
 
-/* =========================================================
-   OFFLO-PAY BRANDING — FINAL FIX
-   ========================================================= */
 
-/* Navbar: large readable logo */
+
+
 .offlopay-navbar-logo {
   display: flex !important;
   align-items: center !important;
@@ -10420,7 +10297,7 @@ a {
   object-fit: contain !important;
 }
 
-/* Phone/payment card: text only, no stretched image */
+
 .payment-ui .mini-logo {
   width: auto !important;
   min-width: 0 !important;
@@ -10461,7 +10338,7 @@ a {
 }
 
 
-/* OFFLO-PAY NAVBAR — 64-72px readable logo */
+
 .offlopay-navbar-logo {
   height: 68px !important;
   width: 300px !important;
@@ -10493,7 +10370,7 @@ a {
 }
 
 
-/* FINAL NAVBAR LOGO SIZE — keep inside navbar */
+
 .navbar .offlopay-navbar-logo {
   width: auto !important;
   min-width: 0 !important;
@@ -10527,7 +10404,7 @@ a {
 }
 
 
-/* FINAL — remove extra navbar logo container space/glow */
+
 .navbar .offlopay-navbar-logo {
   width: fit-content !important;
   min-width: 0 !important;
@@ -10570,9 +10447,7 @@ a {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — TEAL / AQUA PREMIUM THEME
-   ========================================================= */
+
 
 :root {
   --bg: #050B0F !important;
@@ -10583,19 +10458,19 @@ a {
   --muted: #9AA8AD !important;
 }
 
-/* Main background */
+
 body {
   background: #050B0F !important;
   color: #FFFFFF !important;
 }
 
-/* Main sections */
+
 section,
 .navbar {
   background-color: transparent;
 }
 
-/* Dark glass cards */
+
 .feature-card,
 .difference-box,
 .team-card,
@@ -10605,7 +10480,7 @@ section,
   background-color: #0B1418 !important;
 }
 
-/* Main gradient text */
+
 .gradient-text {
   background: linear-gradient(
     90deg,
@@ -10618,7 +10493,7 @@ section,
   color: transparent !important;
 }
 
-/* Primary buttons */
+
 .btn-primary,
 .nav-button {
   background: linear-gradient(
@@ -10630,7 +10505,7 @@ section,
   border-color: transparent !important;
 }
 
-/* Button hover */
+
 .btn-primary:hover,
 .nav-button:hover {
   box-shadow:
@@ -10638,31 +10513,31 @@ section,
     0 8px 30px rgba(34, 184, 240, .16) !important;
 }
 
-/* Teal highlights */
+
 .mini-label,
 .section-label,
 .feature-label {
   color: #19E6C1 !important;
 }
 
-/* Links */
+
 .nav-links a:hover {
   color: #19E6C1 !important;
 }
 
-/* Connectivity / status indicators */
+
 .connection i {
   background: #19E6C1 !important;
   box-shadow: 0 0 12px rgba(25, 230, 193, .55) !important;
 }
 
-/* Accent borders */
+
 .feature-card:hover,
 .difference-box:hover {
   border-color: rgba(25, 230, 193, .28) !important;
 }
 
-/* Teal ambient glow */
+
 .ambient-glow {
   background:
     radial-gradient(
@@ -10673,18 +10548,18 @@ section,
     ) !important;
 }
 
-/* Remove large purple glow */
+
 .hero-visual::after {
   background: transparent !important;
 }
 
-/* Soft text */
+
 p,
 small {
   color: #9AA8AD;
 }
 
-/* Keep headings white */
+
 h1,
 h2,
 h3,
@@ -10693,13 +10568,13 @@ strong {
   color: #FFFFFF;
 }
 
-/* Teal selection */
+
 ::selection {
   background: #19E6C1 !important;
   color: #04120F !important;
 }
 
-/* Mobile menu */
+
 .mobile-menu,
 .mobile-menu-panel {
   background: #050B0F !important;
@@ -10711,11 +10586,9 @@ strong {
 }
 
 
-/* =========================================================
-   OFFLO-PAY — REMOVE REMAINING BLUE/PURPLE
-   ========================================================= */
 
-/* CONNECTIVITY HEADLINE */
+
+
 h1 span,
 h1 .gradient-text,
 .hero-title span,
@@ -10732,7 +10605,7 @@ h1 .gradient-text,
   color: transparent !important;
 }
 
-/* COMING SOON BUTTON */
+
 .hero-actions .btn-primary,
 .hero .btn-primary,
 .btn-primary {
@@ -10746,14 +10619,14 @@ h1 .gradient-text,
   border-color: transparent !important;
 }
 
-/* PHONE CARD WORDMARK */
+
 .payment-ui .mini-logo span {
   background: none !important;
   -webkit-text-fill-color: #FFFFFF !important;
   color: #FFFFFF !important;
 }
 
-/* PHONE CARD ACTIONS */
+
 .payment-ui .pay-action {
   background: rgba(255,255,255,.035) !important;
   color: #FFFFFF !important;
@@ -10768,7 +10641,7 @@ h1 .gradient-text,
   box-shadow: 0 0 18px rgba(25,230,193,.12) !important;
 }
 
-/* ANSHIK AVATAR */
+
 .payment-ui .transaction-icon {
   background: rgba(25,230,193,.14) !important;
   color: #19E6C1 !important;
@@ -10782,20 +10655,20 @@ h1 .gradient-text,
   border-color: rgba(34,184,240,.25) !important;
 }
 
-/* NAVBAR LOGO */
+
 .navbar .offlopay-logo-img,
 .navbar .logo img {
   mix-blend-mode: screen !important;
 }
 
-/* Remove logo container effects */
+
 .navbar .offlopay-navbar-logo {
   background: transparent !important;
   border: none !important;
   box-shadow: none !important;
 }
 
-/* Kill old purple/blue ambient overlays around payment UI */
+
 .payment-ui::before,
 .payment-ui::after {
   background: transparent !important;
@@ -10803,11 +10676,9 @@ h1 .gradient-text,
 }
 
 
-/* =========================================================
-   OFFLO-PAY — FINAL REMAINING COLOR FIXES
-   ========================================================= */
 
-/* 1. COMING SOON BUTTON — remove old blue/purple */
+
+
 .hero-actions .btn-primary,
 .hero-visual .btn-primary,
 a.btn-primary,
@@ -10823,7 +10694,7 @@ a.btn-primary,
   box-shadow: 0 8px 28px rgba(25,230,193,.16) !important;
 }
 
-/* 2. SHUBHAM AVATAR — teal/cyan */
+
 .payment-ui .transaction-icon.secondary {
   background: rgba(25,230,193,.12) !important;
   color: #19E6C1 !important;
@@ -10831,7 +10702,7 @@ a.btn-primary,
   box-shadow: none !important;
 }
 
-/* 3. NAVBAR LOGO — remove surrounding dark/glow patch */
+
 .navbar .offlopay-navbar-logo,
 .navbar .logo {
   background: transparent !important;
@@ -10848,17 +10719,15 @@ a.btn-primary,
   filter: none !important;
 }
 
-/* Keep Ovi AI purple accent intentionally */
+
 .ovi-ai,
 .ovi-ai *,
 .ovi-badge {
-  /* intentionally unchanged */
+  
 }
 
 
-/* =========================================================
-   OFFLO-PAY — SMART SPENDING
-   ========================================================= */
+
 
 .spending-insights-section {
   position: relative;
@@ -11187,9 +11056,7 @@ a.btn-primary,
 }
 
 
-/* =========================================================
-   SMART SPENDING — FINAL UI FIX
-   ========================================================= */
+
 
 .spending-insights-section {
   display: block !important;
@@ -11217,7 +11084,7 @@ a.btn-primary,
   color: #9AA8AD !important;
 }
 
-/* MAIN CONTAINER */
+
 .spending-dashboard {
   display: flex !important;
   flex-direction: column !important;
@@ -11225,7 +11092,7 @@ a.btn-primary,
   width: 100% !important;
 }
 
-/* STAT CARDS */
+
 .spending-summary-grid {
   display: grid !important;
   grid-template-columns: repeat(4, minmax(0, 1fr)) !important;
@@ -11276,7 +11143,7 @@ a.btn-primary,
     0 12px 35px rgba(0,0,0,.18) !important;
 }
 
-/* TWO COLUMN PANELS */
+
 .spending-main-grid {
   display: grid !important;
   grid-template-columns: minmax(0, 1.25fr) minmax(300px, .75fr) !important;
@@ -11307,7 +11174,7 @@ a.btn-primary,
   line-height: 1.25 !important;
 }
 
-/* CATEGORY BARS */
+
 .category-breakdown {
   display: flex !important;
   flex-direction: column !important;
@@ -11350,7 +11217,7 @@ a.btn-primary,
   font-size: 13px !important;
 }
 
-/* BUDGET */
+
 .budget-ring-wrap {
   display: flex !important;
   justify-content: center !important;
@@ -11425,7 +11292,7 @@ a.btn-primary,
   cursor: pointer !important;
 }
 
-/* TREND */
+
 .trend-box {
   display: block !important;
   width: 100% !important;
@@ -11481,7 +11348,7 @@ a.btn-primary,
   white-space: nowrap !important;
 }
 
-/* SUGGESTIONS */
+
 .smart-suggestions {
   display: flex !important;
   flex-direction: column !important;
@@ -11508,7 +11375,7 @@ a.btn-primary,
   line-height: 1.5 !important;
 }
 
-/* FILTER */
+
 .transactions-header select,
 #transaction-filter {
   appearance: none !important;
@@ -11525,7 +11392,7 @@ a.btn-primary,
   border-color: #19E6C1 !important;
 }
 
-/* TRANSACTIONS */
+
 .insight-transactions {
   display: flex !important;
   flex-direction: column !important;
@@ -11570,7 +11437,7 @@ a.btn-primary,
   white-space: nowrap !important;
 }
 
-/* MOBILE */
+
 @media (max-width: 900px) {
   .spending-summary-grid {
     grid-template-columns: repeat(2,minmax(0,1fr)) !important;
@@ -11613,7 +11480,7 @@ a.btn-primary,
 }
 
 
-/* Smart Spending — fix heading/paragraph overlap */
+
 .spending-heading h2 {
   line-height: 1.25 !important;
   margin-top: 14px !important;

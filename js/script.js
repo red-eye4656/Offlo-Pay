@@ -220,9 +220,7 @@ window.addEventListener("resize", () => {
 });
 
 
-/* =========================================================
-   OFFLO-PAY — PAYMENT UI DEMO INTERACTION
-   ========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -253,9 +251,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/* =========================================================
-   OFFLO-PAY — MOBILE TAP UX
-   ========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -296,9 +292,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/* =========================================================
-   OFFLO-PAY — MOBILE MENU
-   ========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
@@ -362,9 +356,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
-/* =========================================================
-   OFFLO-PAY — SMART SPENDING
-   ========================================================= */
+
 
 document.addEventListener("DOMContentLoaded", () => {
 
