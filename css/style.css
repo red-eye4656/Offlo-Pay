@@ -11654,3 +11654,18 @@ body {
   }
 }
 
+
+
+/* OFFLOPAY-BETA-VISIBILITY-FIX */
+#beta-launch {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+  position: relative;
+  z-index: 2;
+}
+#beta-launch .beta-launch-content {
+  display: block !important;
+  visibility: visible !important;
+  opacity: 1 !important;
+}
