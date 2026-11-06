@@ -11932,15 +11932,66 @@ body {
 }
 /* END OFFLOPAY-OPEN-BETA-CYAN-TEAL-FIX */
 
-/* Open Beta brand colour fix */
-.coming-box .coming-countdown-title em,
-.coming-countdown-unit span {
+
+/* Offlo-Pay unified cyan-teal countdown */
+.beta-countdown-group {
+  width: min(100%, 720px);
+  margin: 0 auto 28px;
+}
+.hero-content .beta-countdown-group {
+  width: min(100%, 440px);
+  margin: 28px 0 0;
+}
+.beta-countdown-group .hero-countdown-grid,
+.beta-countdown-group .coming-countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 10px;
+}
+.beta-countdown-group .hero-countdown-unit,
+.beta-countdown-group .coming-countdown-unit {
+  min-width: 0;
+  padding: 15px 5px 12px;
+  text-align: center;
+  border: 1px solid rgba(25,230,193,.22);
+  border-radius: 13px;
+  background: linear-gradient(145deg, rgba(34,184,240,.10), rgba(25,230,193,.07));
+  backdrop-filter: blur(12px);
+}
+.beta-countdown-group [data-days],
+.beta-countdown-group [data-hours],
+.beta-countdown-group [data-minutes],
+.beta-countdown-group [data-seconds],
+.coming-box .coming-countdown-title em {
   background: linear-gradient(110deg, #22B8F0, #19E6C1);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
 }
-.coming-countdown-unit {
-  border-color: rgba(25,230,193,.2);
+.beta-countdown-group [data-days],
+.beta-countdown-group [data-hours],
+.beta-countdown-group [data-minutes],
+.beta-countdown-group [data-seconds] {
+  display: block;
+  font-size: clamp(1.35rem, 4vw, 2.2rem);
+  font-weight: 750;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
 }
-/* End fix */
+.beta-countdown-group small {
+  display: block;
+  margin-top: 8px;
+  color: var(--muted);
+  font-size: .58rem;
+  font-weight: 700;
+  letter-spacing: .8px;
+}
+.coming-countdown-date { display: none !important; }
+
+@media (max-width: 500px) {
+  .beta-countdown-group .hero-countdown-grid,
+  .beta-countdown-group .coming-countdown-grid { gap: 6px; }
+  .beta-countdown-group .hero-countdown-unit,
+  .beta-countdown-group .coming-countdown-unit { padding: 13px 2px 10px; }
+  .beta-countdown-group small { font-size: .48rem; letter-spacing: .3px; }
+}

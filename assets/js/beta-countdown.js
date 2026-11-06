@@ -1,65 +1,25 @@
-/* OFFLOPAY-BETA-COUNTDOWN-JS */
+/* Synced Offlo-Pay countdowns */
+(() => {
+  const target = new Date("2027-01-01T00:00:00+05:30").getTime();
+  const groups = document.querySelectorAll(".beta-countdown-group");
 
-(function () {
-  const launchDate = new Date(
-    "2027-01-01T00:00:00+05:30"
-  ).getTime();
+  function update() {
+    let left = Math.max(0, target - Date.now()) / 1000;
+    const values = {
+      days: Math.floor(left / 86400),
+      hours: Math.floor(left / 3600) % 24,
+      minutes: Math.floor(left / 60) % 60,
+      seconds: Math.floor(left) % 60
+    };
 
-  const daysEl = document.getElementById("days");
-  const hoursEl = document.getElementById("hours");
-  const minutesEl = document.getElementById("minutes");
-  const secondsEl = document.getElementById("seconds");
-  const statusEl = document.getElementById("beta-status");
-
-  if (!daysEl || !hoursEl || !minutesEl || !secondsEl) {
-    return;
+    groups.forEach(group => {
+      Object.entries(values).forEach(([unit, value]) => {
+        const el = group.querySelector(`[data-${unit}]`);
+        if (el) el.textContent = String(value).padStart(2, "0");
+      });
+    });
   }
 
-  function updateCountdown() {
-    const now = Date.now();
-    const difference = launchDate - now;
-
-    if (difference <= 0) {
-      daysEl.textContent = "00";
-      hoursEl.textContent = "00";
-      minutesEl.textContent = "00";
-      secondsEl.textContent = "00";
-
-      if (statusEl) {
-        statusEl.textContent =
-          "OffloPay Open Beta launch target reached!";
-      }
-
-      clearInterval(timer);
-      return;
-    }
-
-    const days = Math.floor(
-      difference / (1000 * 60 * 60 * 24)
-    );
-
-    const hours = Math.floor(
-      (difference / (1000 * 60 * 60)) % 24
-    );
-
-    const minutes = Math.floor(
-      (difference / (1000 * 60)) % 60
-    );
-
-    const seconds = Math.floor(
-      (difference / 1000) % 60
-    );
-
-    daysEl.textContent = String(days).padStart(2, "0");
-    hoursEl.textContent = String(hours).padStart(2, "0");
-    minutesEl.textContent = String(minutes).padStart(2, "0");
-    secondsEl.textContent = String(seconds).padStart(2, "0");
-  }
-
-  updateCountdown();
-
-  const timer = setInterval(updateCountdown, 1000);
-
+  update();
+  setInterval(update, 1000);
 })();
-
-/* END OFFLOPAY-BETA-COUNTDOWN-JS */
