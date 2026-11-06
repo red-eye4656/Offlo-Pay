@@ -8,7 +8,7 @@
   --text: #f5f7ff;
   --muted: #9299aa;
   --blue: #19c9ff;
-  --purple: #814dff;
+  --purple: #4078ff;
 }
 
 * {
@@ -81,7 +81,7 @@ a {
     120deg,
     #12ddff,
     #4078ff,
-    #ad4dff
+    #19c9ff
   );
 
   background-clip: text;
@@ -276,7 +276,7 @@ a {
     linear-gradient(
       105deg,
       #098fff,
-      #7648ff
+      #4078ff
     );
 
   box-shadow:
@@ -375,7 +375,7 @@ a {
 
   box-shadow:
     0 0 75px rgba(30,105,255,.28),
-    inset 0 0 60px rgba(106,63,255,.12);
+    inset 0 0 60px rgba(25,201,255,.12);
 }
 
 .x-symbol {
@@ -394,7 +394,7 @@ a {
       130deg,
       #1ee1ff,
       #3d73ff,
-      #a64cff
+      #19c9ff
     );
 
   background-clip: text;
@@ -558,7 +558,7 @@ a {
     linear-gradient(
       135deg,
       #0bcfff,
-      #7447ff
+      #4078ff
     );
 
   box-shadow:
@@ -799,7 +799,7 @@ a {
 
   border-radius: 38px;
 
-  border: 1px solid rgba(73,104,255,.28);
+  border: 1px solid rgba(25,201,255,.28);
 
   background:
     radial-gradient(
@@ -911,7 +911,7 @@ a {
     linear-gradient(
       135deg,
       #0ccfff,
-      #7147ff
+      #4078ff
     );
 }
 
@@ -1313,7 +1313,7 @@ footer {
       120deg,
       #13d8ff,
       #4575ff,
-      #a34dff
+      #19c9ff
     );
 
   background-clip: text;
@@ -11789,7 +11789,7 @@ body {
 
 .coming-countdown-unit {
   padding: 23px 8px;
-  border: 1px solid rgba(73,104,255,.22);
+  border: 1px solid rgba(25,201,255,.22);
   border-radius: 18px;
   background:
     linear-gradient(145deg, rgba(46,91,255,.09), rgba(255,255,255,.025));
