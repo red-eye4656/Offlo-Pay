@@ -11516,3 +11516,141 @@ body {
   min-width: 100%;
 }
 
+
+
+/* OFFLOPAY-BETA-COUNTDOWN-CSS */
+
+.beta-launch {
+  position: relative;
+  overflow: hidden;
+  padding: 90px 20px;
+  text-align: center;
+  background:
+    radial-gradient(
+      ellipse at 50% 0%,
+      rgba(113, 75, 255, 0.16),
+      transparent 65%
+    ),
+    #08080d;
+  border-top: 1px solid rgba(255,255,255,0.07);
+  border-bottom: 1px solid rgba(255,255,255,0.07);
+}
+
+.beta-launch-content {
+  max-width: 850px;
+  margin: auto;
+}
+
+.beta-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 16px;
+  border: 1px solid rgba(151, 115, 255, 0.35);
+  border-radius: 50px;
+  background: rgba(126, 85, 255, 0.09);
+  color: #bba7ff;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.beta-dot {
+  width: 7px;
+  height: 7px;
+  border-radius: 50%;
+  background: #a58aff;
+  box-shadow: 0 0 12px #a58aff;
+  animation: betaPulse 1.5s infinite;
+}
+
+.beta-launch h2 {
+  margin: 28px 0 14px;
+  font-size: clamp(30px, 5vw, 54px);
+  font-weight: 750;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.beta-description {
+  max-width: 570px;
+  margin: 0 auto;
+  color: #9996a7;
+  line-height: 1.8;
+  font-size: 15px;
+}
+
+.countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 14px;
+  max-width: 650px;
+  margin: 45px auto 30px;
+}
+
+.countdown-item {
+  padding: 25px 10px;
+  border: 1px solid rgba(255,255,255,0.09);
+  border-radius: 16px;
+  background: rgba(255,255,255,0.035);
+  backdrop-filter: blur(12px);
+}
+
+.countdown-item span {
+  display: block;
+  color: #c2adff;
+  font-size: clamp(30px, 5vw, 48px);
+  font-weight: 750;
+  font-variant-numeric: tabular-nums;
+}
+
+.countdown-item small {
+  display: block;
+  margin-top: 9px;
+  color: #777486;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.beta-launch-date {
+  color: #a89aee;
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+.beta-status {
+  margin-top: 25px;
+  color: #777486;
+  font-size: 13px;
+}
+
+@keyframes betaPulse {
+  50% {
+    opacity: 0.4;
+    box-shadow: 0 0 3px #a58aff;
+  }
+}
+
+@media (max-width: 500px) {
+  .beta-launch {
+    padding: 65px 16px;
+  }
+
+  .countdown-grid {
+    gap: 8px;
+    margin-top: 35px;
+  }
+
+  .countdown-item {
+    padding: 19px 5px;
+    border-radius: 12px;
+  }
+
+  .countdown-item small {
+    font-size: 8px;
+    letter-spacing: 1px;
+  }
+}
+
