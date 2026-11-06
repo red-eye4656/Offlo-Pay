@@ -11995,3 +11995,85 @@ body {
   .beta-countdown-group .coming-countdown-unit { padding: 13px 2px 10px; }
   .beta-countdown-group small { font-size: .48rem; letter-spacing: .3px; }
 }
+
+/* Open Beta Version Information */
+.beta-info {
+  margin-top: 34px;
+  padding-top: 28px;
+  border-top: 1px solid rgba(34, 184, 240, 0.16);
+}
+
+.beta-info-label {
+  display: inline-block;
+  color: #19E6C1;
+  font-size: 10px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin-bottom: 12px;
+}
+
+.beta-info h3 {
+  color: #F5F7FF;
+  font-size: clamp(22px, 3vw, 30px);
+  margin: 0 0 12px;
+}
+
+.beta-info h3 em {
+  font-style: normal;
+  background: linear-gradient(105deg, #22B8F0, #19E6C1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.beta-info > p {
+  color: #9299AA;
+  font-size: 14px;
+  line-height: 1.8;
+  max-width: 650px;
+  margin: 0;
+}
+
+.beta-info-points {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 18px;
+  margin-top: 26px;
+}
+
+.beta-info-points > div {
+  padding: 17px;
+  border: 1px solid rgba(34, 184, 240, 0.13);
+  border-radius: 14px;
+  background: rgba(34, 184, 240, 0.025);
+}
+
+.beta-info-points span,
+.beta-info-points strong,
+.beta-info-points small {
+  display: block;
+}
+
+.beta-info-points span {
+  color: #19E6C1;
+  font-size: 11px;
+  margin-bottom: 12px;
+}
+
+.beta-info-points strong {
+  color: #F5F7FF;
+  font-size: 13px;
+  margin-bottom: 7px;
+}
+
+.beta-info-points small {
+  color: #9299AA;
+  font-size: 11px;
+  line-height: 1.6;
+}
+
+@media (max-width: 600px) {
+  .beta-info-points {
+    grid-template-columns: 1fr;
+  }
+}
