@@ -11752,3 +11752,100 @@ body {
     letter-spacing: 0.7px;
   }
 }
+
+
+/* OFFLOPAY-COMING-BOX-COUNTDOWN */
+.coming-box .coming-countdown-title {
+  margin-bottom: 0;
+  font-size: clamp(3rem, 7vw, 6.5rem);
+  line-height: 1;
+  letter-spacing: -.075em;
+}
+
+.coming-box .coming-countdown-title em {
+  background: linear-gradient(110deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.coming-box .coming-countdown-subtitle {
+  max-width: 620px;
+  margin: 24px auto 34px;
+  color: var(--muted);
+  line-height: 1.7;
+}
+
+.coming-countdown {
+  width: min(100%, 720px);
+  margin: 0 auto 30px;
+}
+
+.coming-countdown-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.coming-countdown-unit {
+  padding: 23px 8px;
+  border: 1px solid rgba(73,104,255,.22);
+  border-radius: 18px;
+  background:
+    linear-gradient(145deg, rgba(46,91,255,.09), rgba(255,255,255,.025));
+  backdrop-filter: blur(12px);
+}
+
+.coming-countdown-unit span {
+  display: block;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 750;
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums;
+  background: linear-gradient(110deg, var(--blue), var(--purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.coming-countdown-unit small {
+  display: block;
+  margin-top: 10px;
+  color: var(--muted);
+  font-size: .65rem;
+  font-weight: 700;
+  letter-spacing: 1.5px;
+}
+
+.coming-countdown-date {
+  margin: 22px 0 0 !important;
+  color: #aab6d0 !important;
+  font-size: .75rem;
+  font-weight: 700;
+  letter-spacing: 1.8px;
+}
+
+@media (max-width: 600px) {
+  .coming-section {
+    padding: 75px 5vw;
+  }
+
+  .coming-box {
+    padding: 65px 5%;
+    border-radius: 24px;
+  }
+
+  .coming-countdown-grid {
+    gap: 7px;
+  }
+
+  .coming-countdown-unit {
+    padding: 17px 3px;
+    border-radius: 12px;
+  }
+
+  .coming-countdown-unit small {
+    font-size: .53rem;
+    letter-spacing: .7px;
+  }
+}
