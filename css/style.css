@@ -11849,3 +11849,98 @@ body {
     letter-spacing: .7px;
   }
 }
+
+/* OFFLOPAY-OPEN-BETA-CYAN-TEAL-FIX */
+.coming-box {
+  border-color: rgba(25, 230, 193, .22);
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(25, 230, 193, .10),
+      transparent 55%
+    ),
+    rgba(255, 255, 255, .025);
+}
+
+.coming-box .coming-countdown-title em {
+  background: linear-gradient(110deg, #22B8F0, #19E6C1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.coming-countdown-unit {
+  border-color: rgba(25, 230, 193, .18);
+  background: linear-gradient(
+    145deg,
+    rgba(34, 184, 240, .075),
+    rgba(25, 230, 193, .035),
+    rgba(255, 255, 255, .02)
+  );
+}
+
+.coming-countdown-unit span {
+  background: linear-gradient(110deg, #22B8F0, #19E6C1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.coming-countdown-date {
+  color: #8FDCD5 !important;
+}
+/* END OFFLOPAY-OPEN-BETA-CYAN-TEAL-FIX */
+
+/* OFFLOPAY-OPEN-BETA-CYAN-TEAL-FIX */
+.coming-box {
+  border-color: rgba(25, 230, 193, .22);
+  background:
+    radial-gradient(
+      circle at 50% 0%,
+      rgba(25, 230, 193, .10),
+      transparent 55%
+    ),
+    rgba(255, 255, 255, .025);
+}
+
+.coming-box .coming-countdown-title em {
+  background: linear-gradient(110deg, #22B8F0, #19E6C1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.coming-countdown-unit {
+  border-color: rgba(25, 230, 193, .18);
+  background: linear-gradient(
+    145deg,
+    rgba(34, 184, 240, .075),
+    rgba(25, 230, 193, .035),
+    rgba(255, 255, 255, .02)
+  );
+}
+
+.coming-countdown-unit span {
+  background: linear-gradient(110deg, #22B8F0, #19E6C1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.coming-countdown-date {
+  color: #8FDCD5 !important;
+}
+/* END OFFLOPAY-OPEN-BETA-CYAN-TEAL-FIX */
+
+/* Open Beta brand colour fix */
+.coming-box .coming-countdown-title em,
+.coming-countdown-unit span {
+  background: linear-gradient(110deg, #22B8F0, #19E6C1);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+.coming-countdown-unit {
+  border-color: rgba(25,230,193,.2);
+}
+/* End fix */
